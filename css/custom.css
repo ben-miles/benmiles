@@ -596,10 +596,28 @@ footer .social a:hover {
     border-radius: 0;
     border-color: #adadad;
     color: #fff;
+    font-weight: 600;
+    width: 100%;
+	border-right: 1px solid #adadad;
+}
+
+@media ( min-width: 576px ) {
+    .btn-toolbar .input-group-addon {
+        width: auto;
+    	border-right: none;
+    }
 }
 
 .btn-group {
 	margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media ( min-width: 768px ) {
+    .btn-group {
+        margin-right: 30px;
+    }
 }
 
 .btn-toolbar .btn {
@@ -632,10 +650,7 @@ footer .social a:hover {
     width: calc( 100% - 30px);
     height: calc( 100% - 30px );
     transition: opacity .25s ease-in-out;
-}
-
-.gallery-item a:hover .text {
-        opacity: 1;
+	z-index: 1; /* blur effect on image doesn't work without this */
 }
 
 .gallery-item .text .title h3 {
@@ -662,6 +677,15 @@ footer .social a:hover {
     border: 1px solid #ccc;
     width: 100%;
     height: auto;
+    transition: filter .25s ease-in-out;
+}
+
+.gallery-item a:hover .text {
+        opacity: 1;
+}
+
+.gallery-item a:hover img {
+    filter: blur(2px);
 }
 
 @media ( min-width: 768px ) {
