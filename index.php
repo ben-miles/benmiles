@@ -11,8 +11,8 @@
 // TODO: clear out unused images
 // TODO: smaller thumbnails for mobile
 // TODO: normalize gallery item heights to prevent big gaps
-
-
+// TODO: multiple image support for lightbox
+// TODO: image traversal (? <-- PREV and NEXT --> ) for lightbox
 
 // error_reporting(0);
 require 'assets/data.php';
