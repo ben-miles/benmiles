@@ -1,8 +1,15 @@
 /* ON READY... ****************************************************************/
 $( document ).ready( function(){
 
+    // Negate mobile browser addressbar maybe?
+    // seems to be resisting my charms
+    // if( $( window ).width() < 900 ){
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //     $( window ).scrollTop( 50 );
+    // }
+
     // Apply animations
-    applyAnimations();
+    // applyAnimations();
 
 } );
 
