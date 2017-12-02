@@ -695,13 +695,28 @@ footer .social a:hover {
 /*about*/
 
 #about {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: #222;
     background-image: url('/img/ben-miles_about_bkg.jpg');
     background-position-x: right;
-    background-position-y: 42px;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media ( min-width: 768px ) {
+    #about {
+        background-attachment: fixed;
+    }
+}
+
+#about .section-header {
+    margin-bottom: 40px;
+}
+
+@media ( min-width: 768px ) {
+    #about .section-header {
+        margin-bottom: 0;
+    }
 }
 
 .svg-row {

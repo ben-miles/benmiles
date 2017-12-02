@@ -131,7 +131,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
     <div class="section-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-xl-8">
+                <div class="col-sm-7 col-xl-8">
                     <h2 class="animated" data-animation="fadeInUp">About</h2>
                 </div>
             </div>
@@ -156,7 +156,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
             </div>
 
             <div class="row">
-                <div class="col-md-7 col-xl-8">
+                <div class="col-sm-7 col-xl-8">
                     <div class="svg-row">
                         <?php echo displaySVG( 'HTML 5' ); ?>
                         <?php echo displaySVG( 'CSS 3', .1 ); ?>
