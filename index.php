@@ -131,7 +131,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
     <div class="section-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <h2 class="animated" data-animation="fadeInUp">About</h2>
                 </div>
             </div>
@@ -144,7 +144,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <div class="animated card about" style="animation-delay: .1s;" data-animation="fadeInUp">
                         <div class="card-block">
                             <!-- first person, third person? this is always wierd. probably first, keep the tone from the intro -->
@@ -156,7 +156,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <div class="svg-row">
                         <?php echo displaySVG( 'HTML 5' ); ?>
                         <?php echo displaySVG( 'CSS 3', .1 ); ?>
@@ -180,10 +180,10 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <ul class="timeline">
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -201,7 +201,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -219,7 +219,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge warning">
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </div>
@@ -237,7 +237,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -255,7 +255,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge danger">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
@@ -273,7 +273,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge danger">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
