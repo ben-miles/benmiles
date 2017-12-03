@@ -8,10 +8,9 @@
 // TODO: mobile, intro, increase vertical spacing between elements. social icons should be at the bottom, account for address bar
 // TODO: clear out unused images
 // TODO: smaller thumbnails for mobile
-// TODO: normalize gallery item heights to prevent big gaps
+// TODO: normalize gallery item heights to prevent big gaps(?) still trying to decide if this is actually better
 // TODO: multiple image support for lightbox
 // TODO: image traversal (? <-- PREV and NEXT --> ) for lightbox
-// TODO: fix footer overflow issue; prob relates to animate.css on footer social items
 
 // error_reporting(0);
 require 'assets/data.php';
