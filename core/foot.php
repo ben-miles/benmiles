@@ -16,7 +16,11 @@
                         <i class="fa fa-instagram animated" data-animation="fadeInUp" style="animation-delay: .2s;"></i>
                     </a>
                 </li>
-                <li>
+                <li class="animated" data-animation="fadeInUp" style="animation-delay: .3s;">
+                    <a class="linkedin" href="https://www.linkedin.com/in/benjaminmiles/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
                     <a class="codepen" href="https://codepen.io/benmiles/" target="_blank">
                         <i class="fa fa-codepen animated" data-animation="fadeInUp" style="animation-delay: .3s;"></i>
                     </a>

@@ -1,8 +1,6 @@
 <?php
 // TODO: linkify the animated list items to portfolio subsections
 // TODO: work/edu timelines: d3.js + gantt chart: https://github.com/dk8996/Gantt-Chart
-// TODO: mobile, fixed background in about section needs to scroll/position better
-// TODO: mobile, about: timeline needs to go full width
 // TODO: SVG logo
 // TODO: menubar font gray(?) on load, fade to black on scroll
 // TODO: SEO
@@ -13,6 +11,7 @@
 // TODO: normalize gallery item heights to prevent big gaps
 // TODO: multiple image support for lightbox
 // TODO: image traversal (? <-- PREV and NEXT --> ) for lightbox
+// TODO: fix footer overflow issue; prob relates to animate.css on footer social items
 
 // error_reporting(0);
 require 'assets/data.php';
@@ -41,7 +40,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             <li>DIY Enthusiast.</li>
                         </ul>
                     </div>
-                    <button class="btn btn-default animated fadeInUp scroll"  data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
+                    <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
                         <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
                     </button>
                     <ul class="social list-unstyled list-inline">
@@ -53,6 +52,9 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                         </li>
                         <li class="list-inline-item instagram animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.9s;">
                             <a href="https://www.instagram.com/bencgmiles/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item linkedin animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.9s;">
+                            <a href="https://www.linkedin.com/in/benjaminmiles/" target="_blank" title="linkedIn"><i class="fa fa-linkedin"></i></a>
                         </li>
                         <li class="list-inline-item codepen animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 2s;">
                             <a href="https://codepen.io/benmiles/" target="_blank" title="CodePen"><i class="fa fa-codepen"></i></a>

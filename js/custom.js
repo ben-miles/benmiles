@@ -136,6 +136,7 @@ var $footer = $( "footer" ),
                      + "radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%),"
                      + "radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)),"
                      + "linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)",
+        linkedin: "#283e4a",
         codepen: "#191919",
         github: "#959da5"
     };
