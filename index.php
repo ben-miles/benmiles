@@ -308,15 +308,20 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
         <div class="modal-content">
             <div class="modal-body">
                 <div class="row">
-                    <div class="image col-md-8"></div>
+                    <div class="image col-md-8">
+                        <button type="button" class="close d-md-none" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="wrapper"></div>
+                    </div>
                     <div class="info col-md-4">
+                        <button type="button" class="close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         <div class="row">
                             <div class="col-12">
                                 <div class="header">
                                     <h2></h2>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
                                 </div>
                                 <div class="meta">
                                     <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;</span>

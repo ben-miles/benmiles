@@ -90,7 +90,8 @@ function displayPortfolioPiece( $arrayPortfolioPiece = array() ){
                             <small class="tags"><i class="fa fa-tags" aria-hidden="true"></i>&nbsp;$tagsDisp</small>
                         </div>
                         <div class="body">
-                            <p>$excerpt</p>
+                            <!--p>$excerpt</p-->
+                            <!--a href="$link" target="_blank">$link</a-->
                         </div>
                     </div>
                 </div>

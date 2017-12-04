@@ -69,10 +69,13 @@ $galleryitem.click(this, function(){
     $modal.find( '.header h2' ).html( $thisTitle );
     $modal.find( '.meta' ).html( $thisMeta );
     $modal.find( '.body' ).html( $thisBody );
-    $modal.find( '.image' ).html( '<img src="/img/portfolio/' + $thisImage + '" />' );
+    $modal.find( '.image > .wrapper' ).html( '<img src="/img/portfolio/' + $thisImage + '" />' );
 
     $modal.modal();
 } )
+
+// TODO: Clear image on close modal
+
 
 // INIT imageLoaded + Isotope
 var $gallery = $( '#gallery' ).imagesLoaded( function() {

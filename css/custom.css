@@ -161,8 +161,13 @@ h6, .h6 {
 
 .modal .close {
     border: 1px solid gray;
-	height: 23px;
-	width: 23px;
+	height: 25px;
+	width: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba( 255, 255, 255, 0.75 );
+    z-index: 1;
 }
 
 .modal .close span {
@@ -182,15 +187,16 @@ h6, .h6 {
 }
 
 .modal .image {
+    background-color: #efefef;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     /*height: calc( 100vh - 60px );
     max-height: 75vh;*/
-    border-radius: .2rem .2rem 0 0;
     border-radius: 0;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 .modal .image img {
@@ -226,10 +232,16 @@ h6, .h6 {
 }
 
 @media (min-width: 768px) {
+    .modal .header h2 {
+        padding-right: 25px;
+    }
     .modal .image img {
-        /*border-radius: .2rem 0 0 .2rem;
-        border-radius: 0;*/
+        /*border-radius: 0;*/
         max-height: calc( 100vh - 90px);
+    }
+    .modal .image {
+        border-bottom: 0;
+        border-right: 1px solid #ccc;
     }
 }
 
