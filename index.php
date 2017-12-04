@@ -1,10 +1,16 @@
 <?php
 // TODO: linkify the animated list items to portfolio subsections
 // TODO: work/edu timelines: d3.js + gantt chart: https://github.com/dk8996/Gantt-Chart
-// TODO: mobile, fixed background in about section needs to scroll/position better
-// TODO: mobile, about: timeline needs to go full width
 // TODO: SVG logo
+// TODO: menubar font gray(?) on load, fade to black on scroll
 // TODO: SEO
+// TODO: Break sections out into individual php files
+// TODO: mobile, intro, increase vertical spacing between elements. social icons should be at the bottom, account for address bar
+// TODO: clear out unused images
+// TODO: smaller thumbnails for mobile
+// TODO: normalize gallery item heights to prevent big gaps(?) still trying to decide if this is actually better
+// TODO: multiple image support for lightbox
+// TODO: image traversal (? <-- PREV and NEXT --> ) for lightbox
 
 // error_reporting(0);
 require 'assets/data.php';
@@ -24,32 +30,35 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
         <div class="row whats-up">
             <div class="col-xs-12 col-md-6 col-xl-4 offset-md-6">
                 <div class="col-inner">
-                    <h1 class="animated" data-animation="fadeInUp">Hey.</h1>
-                    <h1 class="animated" data-animation="fadeInUp" style="animation-delay: 1s;">I'm Ben.</h2>
-                    <div class="titles scroll animated" data-animation="fadeInUp" style="animation-delay: 1.2s;">
+                    <h1 class="animated fadeInUp" data-animation="fadeInUp">Hey.</h1>
+                    <h1 class="animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1s;">I'm Ben.</h2>
+                    <div class="titles scroll animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.2s;">
                         <ul>
                             <li>Graphic Designer.</li>
                             <li>Web Developer.</li>
                             <li>DIY Enthusiast.</li>
                         </ul>
                     </div>
-                    <button class="btn btn-default animated scroll"  data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
+                    <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
                         <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
                     </button>
                     <ul class="social list-unstyled list-inline">
-                        <li class="list-inline-item facebook animated" data-animation="fadeInUp" style="animation-delay: 1.7s;">
+                        <li class="list-inline-item facebook animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.7s;">
                             <a href="https://www.facebook.com/bcgm3/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li class="list-inline-item twitter animated" data-animation="fadeInUp" style="animation-delay: 1.8s;">
+                        <li class="list-inline-item twitter animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.8s;">
                             <a href="https://twitter.com/bcgm3" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li class="list-inline-item instagram animated" data-animation="fadeInUp" style="animation-delay: 1.9s;">
+                        <li class="list-inline-item instagram animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.9s;">
                             <a href="https://www.instagram.com/bencgmiles/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
                         </li>
-                        <li class="list-inline-item codepen animated" data-animation="fadeInUp" style="animation-delay: 2s;">
+                        <li class="list-inline-item linkedin animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.9s;">
+                            <a href="https://www.linkedin.com/in/benjaminmiles/" target="_blank" title="linkedIn"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item codepen animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 2s;">
                             <a href="https://codepen.io/benmiles/" target="_blank" title="CodePen"><i class="fa fa-codepen"></i></a>
                         </li>
-                        <li class="list-inline-item github animated" data-animation="fadeInUp" style="animation-delay: 2.1s;">
+                        <li class="list-inline-item github animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 2.1s;">
                             <a href="https://github.com/ben-miles" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
                         </li>
                     </ul>
@@ -75,39 +84,43 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
     </div>
     <!-- / section-header -->
 
-    <!-- controls -->
-    <div class="row" id="row-buttons">
-        <div class="col">
-            <div class="btn-toolbar" role="toolbar" aria-label="Gallery Toolbar">
-                <div class="btn-group btn-group-filter mr-3 animated" role="group" aria-label="Gallery Filter Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
-                    <span class="input-group-addon">Show:&nbsp;</span>
-                    <button type="button" class="btn btn-secondary active" data-filter=".featured">Featured</button>
-                    <button type="button" class="btn btn-secondary" data-filter=".design">Design</button>
-                    <button type="button" class="btn btn-secondary" data-filter=".development">Development</button>
-                    <button type="button" class="btn btn-secondary" data-filter=".diy">DIY</button>
-                    <button type="button" class="btn btn-secondary" data-filter="*">All</button>
-                </div>
-                <div class="btn-group btn-group-sort mr-3 animated" role="group" aria-label="Gallery Sort Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
-                    <span class="input-group-addon">Sort:&nbsp;</span>
-                    <!-- <button type="button" class="btn active btn-secondary" data-sort="original-order">Original</button> -->
-                    <button type="button" class="btn btn-secondary active" data-sort="date">Date</button>
-                    <button type="button" class="btn btn-secondary" data-sort="title">Title</button>
-                    <button type="button" class="btn btn-secondary" id="shuffle">Random</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / controls -->
-
-    <!-- gallery -->
+    <!-- section-body -->
     <div class="section-body">
         <div class="container">
+
+            <!-- controls -->
+            <div class="row" id="row-buttons">
+                <div class="col">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Gallery Toolbar">
+                        <div class="btn-group btn-group-filter animated" role="group" aria-label="Gallery Filter Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
+                            <span class="input-group-addon">Show:&nbsp;</span>
+                            <button type="button" class="btn btn-secondary active" data-filter=".featured">Featured</button>
+                            <button type="button" class="btn btn-secondary" data-filter=".design">Design</button>
+                            <button type="button" class="btn btn-secondary" data-filter=".development">Development</button>
+                            <button type="button" class="btn btn-secondary" data-filter=".diy">DIY</button>
+                            <button type="button" class="btn btn-secondary" data-filter="*">All</button>
+                        </div>
+                        <div class="btn-group btn-group-sort animated" role="group" aria-label="Gallery Sort Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
+                            <span class="input-group-addon">Sort:&nbsp;</span>
+                            <!-- <button type="button" class="btn active btn-secondary" data-sort="original-order">Original</button> -->
+                            <button type="button" class="btn btn-secondary active" data-sort="date">Date</button>
+                            <button type="button" class="btn btn-secondary" data-sort="title">Title</button>
+                            <button type="button" class="btn btn-secondary" id="shuffle">Random</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / controls -->
+
+            <!-- gallery -->
             <div class="row animated" id="gallery" data-animation="fadeIn" style="animation-delay: 0.4s;">
                 <?php echo $output; ?>
             </div>
+            <!-- / gallery -->
+
         </div>
     </div>
-    <!-- / gallery -->
+    <!-- / section-body -->
 
 </section>
 <!-- / port'o'folio -->
@@ -119,7 +132,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
     <div class="section-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-sm-7 col-xl-8">
                     <h2 class="animated" data-animation="fadeInUp">About</h2>
                 </div>
             </div>
@@ -132,7 +145,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-sm-7 col-xl-8">
                     <div class="animated card about" style="animation-delay: .1s;" data-animation="fadeInUp">
                         <div class="card-block">
                             <!-- first person, third person? this is always wierd. probably first, keep the tone from the intro -->
@@ -144,7 +157,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <div class="svg-row">
                         <?php echo displaySVG( 'HTML 5' ); ?>
                         <?php echo displaySVG( 'CSS 3', .1 ); ?>
@@ -168,10 +181,10 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-xl-8">
+                <div class="col-md-7 col-xl-8">
                     <ul class="timeline">
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -189,7 +202,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -207,7 +220,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge warning">
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </div>
@@ -225,7 +238,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
@@ -243,7 +256,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li>
+                        <li class="timeline-inverted">
                             <div class="timeline-badge danger">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
@@ -261,7 +274,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
+                        <li>
                             <div class="timeline-badge danger">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
@@ -295,15 +308,20 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
         <div class="modal-content">
             <div class="modal-body">
                 <div class="row">
-                    <div class="image col-md-8"></div>
+                    <div class="image col-md-8">
+                        <button type="button" class="close d-md-none" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="wrapper"></div>
+                    </div>
                     <div class="info col-md-4">
+                        <button type="button" class="close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         <div class="row">
                             <div class="col-12">
                                 <div class="header">
                                     <h2></h2>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
                                 </div>
                                 <div class="meta">
                                     <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;</span>

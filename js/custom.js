@@ -1,8 +1,15 @@
 /* ON READY... ****************************************************************/
 $( document ).ready( function(){
 
+    // Negate mobile browser addressbar maybe?
+    // seems to be resisting my charms
+    // if( $( window ).width() < 900 ){
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //     $( window ).scrollTop( 50 );
+    // }
+
     // Apply animations
-    applyAnimations();
+    // applyAnimations();
 
 } );
 
@@ -62,10 +69,13 @@ $galleryitem.click(this, function(){
     $modal.find( '.header h2' ).html( $thisTitle );
     $modal.find( '.meta' ).html( $thisMeta );
     $modal.find( '.body' ).html( $thisBody );
-    $modal.find( '.image' ).html( '<img src="/img/portfolio/' + $thisImage + '" />' );
+    $modal.find( '.image > .wrapper' ).html( '<img src="/img/portfolio/' + $thisImage + '" />' );
 
     $modal.modal();
 } )
+
+// TODO: Clear image on close modal
+
 
 // INIT imageLoaded + Isotope
 var $gallery = $( '#gallery' ).imagesLoaded( function() {
@@ -129,6 +139,7 @@ var $footer = $( "footer" ),
                      + "radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%),"
                      + "radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)),"
                      + "linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)",
+        linkedin: "#283e4a",
         codepen: "#191919",
         github: "#959da5"
     };
