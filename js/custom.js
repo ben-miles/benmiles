@@ -20,20 +20,22 @@ $( window ).scroll( function( e ){
     applyAnimations();
 
     // fade in nav's background-color while scrolling past intro
-    var scrollTop = $( this ).scrollTop(), // px between top of viewport and top of page ( 0 = scrolled all the way up)
-        maxScroll = document.getElementById( 'hey' ).clientHeight, // height of the Intro section on load
+    var pxToTop = $( this ).scrollTop(), // px between top of viewport and top of page ( 0 = scrolled all the way up)
+        pxIntroHeight = document.getElementById( 'hey' ).clientHeight, // height of the Intro section on load
         initOpacity = 0.25, // initial background-color-opacity for nav
         maxOpacity = 1; // final background-color-opacity for nav
-    if( scrollTop > maxScroll ){
+    if( pxToTop > pxIntroHeight ){
         $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + maxOpacity + ' )' );
-        $( '.nav-link, .navbar-toggler' ).css( 'color', 'rgba( 0, 0, 0, 1 )' );
+        $( '.nav-link' ).css( 'color', 'rgba( 0, 0, 0, 1 )' );
+        // $( '.navbar-toggler' ).css( 'border-color', 'rgba( 0, 0, 0, 1 )' );
         $( '#backToTop' ).css( 'opacity', 1 );
     } else {
-        var scrollTopDecimal = ( scrollTop / maxScroll ).toFixed( 1 ), // decimal representing percentage of scroll position in Intro section
+        var scrollTopDecimal = ( pxToTop / pxIntroHeight ).toFixed( 1 ), // decimal representing percentage of scroll position in Intro section
             calcOpacity = ( ( ( maxOpacity - initOpacity ) * scrollTopDecimal ) + initOpacity ),
             calcValue = Math.round( 255 - ( 255 * scrollTopDecimal ) );
         $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + calcOpacity + ' )' );
-        $( '.nav-link, .navbar-toggler' ).css( 'color', 'rgba( ' + calcValue + ', ' + calcValue + ', ' + calcValue + ', 1 )' );
+        $( '.nav-link' ).css( 'color', 'rgba( ' + calcValue + ', ' + calcValue + ', ' + calcValue + ', 1 )' );
+        // $( '.navbar-toggler' ).css( 'border-color', 'rgba( ' + calcValue + ', ' + calcValue + ', ' + calcValue + ', 1 )' );
         $( '#backToTop' ).css( 'opacity', scrollTopDecimal );
     }
 } );

@@ -21,9 +21,8 @@
                 <div class="col-sm-7 col-xl-8">
                     <div class="animated card about" style="animation-delay: .1s;" data-animation="fadeInUp">
                         <div class="card-block">
-                            <!-- first person, third person? this is always wierd. probably first, keep the tone from the intro -->
                             <p class="card-text">I'm an experienced graphic designer and web developer, and avid collector of artsy-type hobbies. Born and raised in the Sunshine State, and currently based out of Florida's Space Coast. Driven by a love for learning, I am always trying new methods and media.</p>
-                            <p class="card-text">Presently working for furryLogic in historic Cocoa Village. Outside of work, I spend most of my time screen printing, making custom tables and lamps, and reading (almost done with A Clash of Kings).</p>
+                            <p class="card-text">Presently working for furryLogic in historic Cocoa Village. Outside of work, I spend most of my time screen printing, making custom tables and lamps, and reading (almost done with A Feast for Crows).</p>
                         </div>
                     </div>
                 </div>
@@ -32,23 +31,29 @@
             <div class="row">
                 <div class="col-md-7 col-xl-8">
                     <div class="svg-row">
-                        <?php echo displaySVG( 'HTML 5' ); ?>
-                        <?php echo displaySVG( 'CSS 3', .1 ); ?>
-                        <?php echo displaySVG( 'JavaScript', .2 ); ?>
-                        <?php echo displaySVG( 'PHP', .3 ); ?>
-                        <?php echo displaySVG( 'mySQL', .4 ); ?>
+                        <?php
+                        echo displaySVG( 'HTML 5' );
+                        echo displaySVG( 'CSS 3', .1 );
+                        echo displaySVG( 'JavaScript', .2 );
+                        echo displaySVG( 'PHP', .3 );
+                        echo displaySVG( 'mySQL', .4 );
+                        ?>
                     </div>
                     <div class="svg-row">
-                        <?php echo displaySVG( 'Bootstrap', .5 ); ?>
-                        <?php echo displaySVG( 'jQuery', .6 ); ?>
-                        <?php echo displaySVG( 'Joomla!', .7 ); ?>
-                        <?php echo displaySVG( 'WordPress', .8 ); ?>
+                        <?php
+                        echo displaySVG( 'Bootstrap', .1 );
+                        echo displaySVG( 'jQuery', .2 );
+                        echo displaySVG( 'Joomla!', .3 );
+                        echo displaySVG( 'WordPress', .4 );
+                        ?>
                     </div>
                     <div class="svg-row">
-                        <?php echo displaySVG( 'phpStorm', .9 ); ?>
-                        <?php echo displaySVG( 'Photoshop', 1 ); ?>
-                        <?php echo displaySVG( 'Illustrator', 1.1 ); ?>
-                        <?php echo displaySVG( 'inDesign', 1.2 ); ?>
+                        <?php
+                        echo displaySVG( 'phpStorm', .1 );
+                        echo displaySVG( 'Photoshop', .2 );
+                        echo displaySVG( 'Illustrator', .3 );
+                        echo displaySVG( 'inDesign', .4 ); 
+                        ?>
                     </div>
                 </div>
             </div>
