@@ -11,6 +11,9 @@
 // TODO: normalize gallery item heights to prevent big gaps(?) still trying to decide if this is actually better
 // TODO: multiple image support for lightbox
 // TODO: image traversal (? <-- PREV and NEXT --> ) for lightbox
+// TODO: make gallery thumbanils and modal display images backgrounds for better centering/scaling. set heights/widths as needed
+// TODO: Favicon
+// TODO: Unify styles between buttons, btn-toolbars and navs
 
 // error_reporting(0);
 require 'assets/data.php';
