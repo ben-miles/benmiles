@@ -1,3 +1,4 @@
+        <!-- footer -->
         <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -40,6 +41,7 @@
                 </div>
             </div>
         </footer>
+        <!-- footer -->
 
         <button class="btn btn-default scroll" id="backToTop" data-section="hey">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
