@@ -71,8 +71,8 @@ $( '.scroll' ).click( function( e ) {
 var $galleryitem = $( '.gallery-item' ),
     $modal = $( '#modal' );
 
-$galleryitem.click(this, function(){
-    var $this = $(this),
+$galleryitem.click( this, function(){
+    var $this = $( this ),
         $thisImage = $this.data( 'imagefeatured' ),
         $thisTitle = $this.data( 'title' ),
         $thisBody = $this.data( 'description' )
@@ -101,6 +101,9 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
     },
     sortAscending: {
         date: false
+    },
+    masonry: {
+        columnWidth: '.gallery-item:not(.col-lg-6)'
     },
     sortBy: 'date',
     // filter: '.featured'
