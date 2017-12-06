@@ -53,6 +53,7 @@
         <script src="/js/ie10-viewport-bug-workaround.js"></script>
         <script src="/js/imagesloaded.4.1.3.min.js"></script>
         <script src="/js/isotope.3.0.4.min.js"></script>
+        <script>var jsonPortfolio = <?php echo $jsonPortfolio; ?></script>
         <script src="/js/custom.js"></script>
 
     </body>

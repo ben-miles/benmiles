@@ -1,6 +1,8 @@
 /* ON READY... ****************************************************************/
 $( document ).ready( function(){
 
+    // console.log( jsonPortfolio );
+
     // Negate mobile browser addressbar maybe?
     // seems to be resisting my charms
     // if( $( window ).width() < 900 ){
@@ -77,10 +79,12 @@ $galleryitem.click( this, function(){
         $thisTitle = $this.data( 'title' ),
         $thisBody = $this.data( 'description' )
         $thisMeta = $this.find( '.meta' ).html();
+        $thisLink = $( '<a>', { href: $this.data( 'link' ), text: $this.data( 'link' ), target: '_blank', class: 'external' } );
 
     $modal.find( '.header h2' ).html( $thisTitle );
     $modal.find( '.meta' ).html( $thisMeta );
     $modal.find( '.body' ).html( $thisBody );
+    $modal.find( '.body' ).append( $thisLink );
     $modal.find( '.image > .wrapper' ).html( '<img src="/img/portfolio/' + $thisImage + '" />' );
 
     $modal.modal();
