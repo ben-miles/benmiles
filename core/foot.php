@@ -1,3 +1,4 @@
+        <!-- footer -->
         <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -40,6 +41,7 @@
                 </div>
             </div>
         </footer>
+        <!-- footer -->
 
         <button class="btn btn-default scroll" id="backToTop" data-section="hey">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -51,6 +53,7 @@
         <script src="/js/ie10-viewport-bug-workaround.js"></script>
         <script src="/js/imagesloaded.4.1.3.min.js"></script>
         <script src="/js/isotope.3.0.4.min.js"></script>
+        <script>var jsonPortfolio = <?php echo $jsonPortfolio; ?></script>
         <script src="/js/custom.js"></script>
 
     </body>

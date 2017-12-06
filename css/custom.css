@@ -30,12 +30,12 @@ h6, .h6 {
     border-radius: 0;
     background: rgba( 255, 255, 255, 0.25 );
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-default:hover {
-    border: 1px solid #777;
-    background: rgba( 255, 255, 255, 0.85 );
-    color: #777;
+    background: rgba( 255, 255, 255, 1 );
+    color: #333;
 }
 
 /*------------------------------------------------------------------------------
@@ -133,10 +133,7 @@ h6, .h6 {
     content: none;
 }
 
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+.modal-dialog {
   max-width: none;
   margin: 0;
   padding: 50px 10px 0;
@@ -225,30 +222,16 @@ h6, .h6 {
   margin-right: 10px;
 }*/
 
-@media ( min-width: 576px ) {
-    .modal-dialog {
-    	/*margin: 30px;*/
-    }
-}
-
 @media (min-width: 768px) {
     .modal .header h2 {
         padding-right: 25px;
     }
     .modal .image img {
-        /*border-radius: 0;*/
         max-height: calc( 100vh - 90px);
     }
     .modal .image {
         border-bottom: 0;
         border-right: 1px solid #ccc;
-    }
-}
-
-@media (min-width: 992px) {
-    .modal-dialog {
-        /*margin: 30px auto;*/
-        max-width: 932px;
     }
 }
 
@@ -298,10 +281,11 @@ section {
     Nav
 ------------------------------------------------------------------------------*/
 .navbar {
-    background-color: rgba( 255, 255, 255, 0.1 );
+    background-color: rgba( 255, 255, 255, 0.25 );
     padding: 0;
     border: none;
     border-width: 0;
+    border-bottom: 1px solid #fff;
 	text-align: center;
 }
 
@@ -310,18 +294,51 @@ section {
     width: calc( 100% - 15px );
 }
 
-.navbar-toggler-right {
-    right: 7px;
-    top: 8px;
+.navbar-toggler {
+    background: transparent;
 }
 
-.navbar .brand {
-    color: rgb( 75, 75, 75 ) !important;
-    font-family: 'Pacifico', cursive;
-    text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
-                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );
+.navbar-toggler-right {
+    right: 7.5px;
+	top: 4px;
+	line-height: 1.25;
+}
+
+.navbar-brand {
+    color: #fff;
     padding: 8px 0;
-    position: relative;
+    margin-right: 0;
+}
+
+.navbar-brand:hover {
+    color: #333 !important;
+}
+
+@media ( min-width: 992px ) {
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+}
+
+.navbar-brand > span {
+    display: block;
+    font-weight: 700;
+    line-height: 1.2rem;
+    /*text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
+                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );*/
+}
+
+.navbar-brand > span:first-of-type {
+    font-size: .65rem;
+    font-weight: 400;
+    line-height: .6rem;
+    text-transform: lowercase;
+}
+
+@media ( min-width: 992px ) {
+    .navbar-brand > span:first-of-type {
+        text-align: left;
+    }
 }
 
 .nav-link,
@@ -329,10 +346,17 @@ section {
     padding: .75em 1em;
 }
 
+@media ( min-width: 992px ) {
+    .navbar-toggleable-md .navbar-nav .nav-link {
+        padding: 1.1em .5em .3em;
+    }
+}
+
 .navbar .nav-item.active .nav-link,
-.navbar .nav-link:hover {
-    background-color: rgba( 255, 255, 255, 0.7 ) !important;
-    color: rgba( 0, 0, 0, 0.7 ) !important;
+.navbar .nav-link:hover,
+.navbar-toggler:hover {
+    background-color: #fff !important;
+    color: #333 !important;
 }
 
 .nav > li > a {
@@ -426,8 +450,9 @@ footer .social a:hover {
     background-position: 0 0;
     background-size: cover;
 }
-#hey .col-inner {
+.col-inner {
     height: 100vh;
+    padding: 42px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -437,21 +462,33 @@ footer .social a:hover {
 	/*text-shadow: -2px -1px 5px #111, -6px -3px 25px #111;*/
 }
 
-#hey h1 {
-    font-size: 5rem;
-    font-weight: 900;
+.col-inner > div {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-#hey h1+h1 {
-    margin-bottom: .75rem;
+@media ( min-width: 768px ) {
+    .col-inner {
+        padding-left: 0;
+        justify-content: center;
+        /*text-shadow: 2px 0px 5px #111;*/
+    }
+    .col-inner > div {
+    	justify-content: center;
+    }
+}
+
+#hey h1 {
     font-size: 5rem;
     font-weight: 900;
 }
 
 #hey .titles {
     font-size: 2.5rem;
-    font-weight: 600;
-    margin: 0 0 1.7rem;
+    font-weight: 700;
+    margin: .75rem 0 1.7rem;
     padding: 0;
 }
 #hey .titles ul {
@@ -518,7 +555,7 @@ footer .social a:hover {
     animation-delay: 1.2s;
     font-size: 2rem;
     width: 16rem;
-    margin: 0 2rem 8rem;
+    margin: 0 2rem 2.5rem;
 }
 
 #hey .social a:hover {
@@ -565,6 +602,12 @@ footer .social a:hover {
 
 #hey .social .github a:hover {
     color: #959da5;
+}
+
+@media ( min-width: 768px ) {
+    #hey .social {
+        margin-bottom: 0;
+    }
 }
 
 /*------------------------------------------------------------------------------
@@ -629,7 +672,7 @@ footer .social a:hover {
     border-radius: 0;
     border-color: #adadad;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     width: 100%;
 	border-right: 1px solid #adadad;
     margin-bottom: -1px;
@@ -657,12 +700,9 @@ footer .social a:hover {
     }
 }
 
-.btn-toolbar .btn {
-    cursor: pointer;
-}
-
 .btn-toolbar .btn.active {
     background-color: #ccc;
+    color: #333;
 }
 
 #gallery {
@@ -990,11 +1030,6 @@ html {
   html {
     /*font-size: 20px;*/
   }
-  #hey .col-inner {
-      padding: 0;
-      justify-content: center;
-      /*text-shadow: 2px 0px 5px #111;*/
-  }
   #portfolio {
       /*height: 100vh;*/
   }
@@ -1023,10 +1058,7 @@ html {
     nav > .container {
         width: inherit;
     }
-    .nav-link {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+
     #hey {
         background-position: 0 50%;
     }
