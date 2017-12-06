@@ -327,6 +327,10 @@ section {
     margin-right: 0;
 }
 
+.navbar-brand:hover {
+    color: #333 !important;
+}
+
 @media ( min-width: 992px ) {
     .navbar-brand {
         margin-right: 1rem;
