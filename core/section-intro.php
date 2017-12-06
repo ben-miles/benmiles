@@ -4,18 +4,20 @@
         <div class="row whats-up">
             <div class="col-xs-12 col-md-6 col-xl-4 offset-md-6">
                 <div class="col-inner">
-                    <h1 class="animated fadeInUp" data-animation="fadeInUp">Hey.</h1>
-                    <h1 class="animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1s;">I'm Ben.</h2>
-                    <div class="titles scroll animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.2s;">
-                        <ul>
-                            <li>Graphic Designer.</li>
-                            <li>Web Developer.</li>
-                            <li>DIY Enthusiast.</li>
-                        </ul>
+                    <div>
+                        <h1 class="animated fadeInUp" data-animation="fadeInUp">Hey.</h1>
+                        <h1 class="animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1s;">I'm Ben.</h2>
+                        <div class="titles scroll animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.2s;">
+                            <ul>
+                                <li>Graphic Designer.</li>
+                                <li>Web Developer.</li>
+                                <li>DIY Enthusiast.</li>
+                            </ul>
+                        </div>                    
+                        <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
+                            <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
+                        </button>
                     </div>
-                    <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
-                        <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
-                    </button>
                     <ul class="social list-unstyled list-inline">
                         <li class="list-inline-item facebook animated fadeInUp" data-animation="fadeInUp" style="animation-delay: 1.7s;">
                             <a href="https://www.facebook.com/bcgm3/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>

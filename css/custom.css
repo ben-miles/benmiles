@@ -463,8 +463,9 @@ footer .social a:hover {
     background-position: 0 0;
     background-size: cover;
 }
-#hey .col-inner {
+.col-inner {
     height: 100vh;
+    padding: 42px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -474,13 +475,25 @@ footer .social a:hover {
 	/*text-shadow: -2px -1px 5px #111, -6px -3px 25px #111;*/
 }
 
-#hey h1 {
-    font-size: 5rem;
-    font-weight: 900;
+.col-inner > div {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-#hey h1+h1 {
-    margin-bottom: .75rem;
+@media ( min-width: 768px ) {
+    .col-inner {
+        padding-left: 0;
+        justify-content: center;
+        /*text-shadow: 2px 0px 5px #111;*/
+    }
+    .col-inner > div {
+    	justify-content: center;
+    }
+}
+
+#hey h1 {
     font-size: 5rem;
     font-weight: 900;
 }
@@ -488,7 +501,7 @@ footer .social a:hover {
 #hey .titles {
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 0 0 1.7rem;
+    margin: .75rem 0 1.7rem;
     padding: 0;
 }
 #hey .titles ul {
@@ -555,7 +568,7 @@ footer .social a:hover {
     animation-delay: 1.2s;
     font-size: 2rem;
     width: 16rem;
-    margin: 0 2rem 8rem;
+    margin: 0 2rem 2.5rem;
 }
 
 #hey .social a:hover {
@@ -602,6 +615,12 @@ footer .social a:hover {
 
 #hey .social .github a:hover {
     color: #959da5;
+}
+
+@media ( min-width: 768px ) {
+    #hey .social {
+        margin-bottom: 0;
+    }
 }
 
 /*------------------------------------------------------------------------------
@@ -1023,11 +1042,6 @@ html {
 @media ( min-width: 768px ){
   html {
     /*font-size: 20px;*/
-  }
-  #hey .col-inner {
-      padding: 0;
-      justify-content: center;
-      /*text-shadow: 2px 0px 5px #111;*/
   }
   #portfolio {
       /*height: 100vh;*/
