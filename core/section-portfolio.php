@@ -30,18 +30,18 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
                     <div class="btn-toolbar" role="toolbar" aria-label="Gallery Toolbar">
                         <div class="btn-group btn-group-filter animated" role="group" aria-label="Gallery Filter Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
                             <span class="input-group-addon">Show:&nbsp;</span>
-                            <button type="button" class="btn btn-secondary active" data-filter=".featured">Featured</button>
-                            <button type="button" class="btn btn-secondary" data-filter=".design">Design</button>
-                            <button type="button" class="btn btn-secondary" data-filter=".development">Development</button>
-                            <button type="button" class="btn btn-secondary" data-filter=".diy">DIY</button>
-                            <button type="button" class="btn btn-secondary" data-filter="*">All</button>
+                            <button type="button" class="btn btn-default" data-filter=".featured">Featured</button>
+                            <button type="button" class="btn btn-default" data-filter=".design">Design</button>
+                            <button type="button" class="btn btn-default" data-filter=".development">Development</button>
+                            <button type="button" class="btn btn-default" data-filter=".diy">DIY</button>
+                            <button type="button" class="btn btn-default active" data-filter="*">All</button>
                         </div>
                         <div class="btn-group btn-group-sort animated" role="group" aria-label="Gallery Sort Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
                             <span class="input-group-addon">Sort:&nbsp;</span>
-                            <!-- <button type="button" class="btn active btn-secondary" data-sort="original-order">Original</button> -->
-                            <button type="button" class="btn btn-secondary active" data-sort="date">Date</button>
-                            <button type="button" class="btn btn-secondary" data-sort="title">Title</button>
-                            <button type="button" class="btn btn-secondary" id="shuffle">Random</button>
+                            <!-- <button type="button" class="btn active btn-default" data-sort="original-order">Original</button> -->
+                            <button type="button" class="btn btn-default active" data-sort="date">Date</button>
+                            <button type="button" class="btn btn-default" data-sort="title">Title</button>
+                            <button type="button" class="btn btn-default" id="shuffle">Random</button>
                         </div>
                     </div>
                 </div>

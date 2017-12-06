@@ -30,12 +30,12 @@ h6, .h6 {
     border-radius: 0;
     background: rgba( 255, 255, 255, 0.25 );
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-default:hover {
-    border: 1px solid #777;
-    background: rgba( 255, 255, 255, 0.85 );
-    color: #777;
+    background: rgba( 255, 255, 255, 1 );
+    color: #333;
 }
 
 /*------------------------------------------------------------------------------
@@ -298,10 +298,11 @@ section {
     Nav
 ------------------------------------------------------------------------------*/
 .navbar {
-    background-color: rgba( 255, 255, 255, 0.1 );
+    background-color: rgba( 255, 255, 255, 0.25 );
     padding: 0;
     border: none;
     border-width: 0;
+    border-bottom: 1px solid #fff;
 	text-align: center;
 }
 
@@ -310,9 +311,14 @@ section {
     width: calc( 100% - 15px );
 }
 
+.navbar-toggler {
+    background: transparent;
+}
+
 .navbar-toggler-right {
-    right: 7px;
-    top: 8px;
+    right: 7.5px;
+	top: 4px;
+	line-height: 1.25;
 }
 
 .navbar-brand {
@@ -353,10 +359,17 @@ section {
     padding: .75em 1em;
 }
 
+@media ( min-width: 992px ) {
+    .navbar-toggleable-md .navbar-nav .nav-link {
+        padding: 1.1em .5em .3em;
+    }
+}
+
 .navbar .nav-item.active .nav-link,
-.navbar .nav-link:hover {
-    background-color: rgba( 255, 255, 255, 0.7 ) !important;
-    color: rgba( 0, 0, 0, 0.7 ) !important;
+.navbar .nav-link:hover,
+.navbar-toggler:hover {
+    background-color: #fff !important;
+    color: #333 !important;
 }
 
 .nav > li > a {
@@ -681,12 +694,9 @@ footer .social a:hover {
     }
 }
 
-.btn-toolbar .btn {
-    cursor: pointer;
-}
-
 .btn-toolbar .btn.active {
     background-color: #ccc;
+    color: #333;
 }
 
 #gallery {
@@ -1047,10 +1057,7 @@ html {
     nav > .container {
         width: inherit;
     }
-    .nav-link {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+
     #hey {
         background-position: 0 50%;
     }

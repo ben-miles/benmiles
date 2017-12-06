@@ -14,30 +14,40 @@ $( document ).ready( function(){
 } );
 
 /* ON SCROLL... ***************************************************************/
+
+var opacityMin = 0.25, // initial background-color-opacity for nav
+    opacityMax = 1, // background-color-opacity for nav at bottom of Intro section
+    rgbMin = 255, // initial rgb() color for nav items
+    rgbMax = 119; // rgb() color for nav items at bottom of Intro section
+
 $( window ).scroll( function( e ){
 
     // Apply animations
     applyAnimations();
 
-    // fade in nav's background-color while scrolling past intro
-    var pxToTop = $( this ).scrollTop(), // px between top of viewport and top of page ( 0 = scrolled all the way up)
-        pxIntroHeight = document.getElementById( 'hey' ).clientHeight, // height of the Intro section on load
-        initOpacity = 0.25, // initial background-color-opacity for nav
-        maxOpacity = 1; // final background-color-opacity for nav
-    if( pxToTop > pxIntroHeight ){
-        $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + maxOpacity + ' )' );
-        $( '.nav-link' ).css( 'color', 'rgba( 0, 0, 0, 1 )' );
-        // $( '.navbar-toggler' ).css( 'border-color', 'rgba( 0, 0, 0, 1 )' );
-        $( '#backToTop' ).css( 'opacity', 1 );
-    } else {
-        var scrollTopDecimal = ( pxToTop / pxIntroHeight ).toFixed( 1 ), // decimal representing percentage of scroll position in Intro section
-            calcOpacity = ( ( ( maxOpacity - initOpacity ) * scrollTopDecimal ) + initOpacity ),
-            calcValue = Math.round( 255 - ( 255 * scrollTopDecimal ) );
-        $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + calcOpacity + ' )' );
-        $( '.nav-link' ).css( 'color', 'rgba( ' + calcValue + ', ' + calcValue + ', ' + calcValue + ', 1 )' );
-        // $( '.navbar-toggler' ).css( 'border-color', 'rgba( ' + calcValue + ', ' + calcValue + ', ' + calcValue + ', 1 )' );
-        $( '#backToTop' ).css( 'opacity', scrollTopDecimal );
+    // Determine scroll
+    var pxToTop = $( this ).scrollTop(), // px between top of viewport and top of document ( 0 = scrolled all the way up )
+        pxClientHeight = document.getElementById( 'hey' ).clientHeight; // px height of the Intro section (100vh)
+
+    if( pxToTop < pxClientHeight ){
+
+        var scrollProgress = ( pxToTop / pxClientHeight ).toFixed( 1 ), // decimal ( 0.0 - 1.0 ) representing percentage of scroll position in Intro section
+            opacity = ( opacityMin + ( scrollProgress * ( opacityMax - opacityMin ) ) ).toFixed( 2 ),
+            rgb = Math.round( rgbMin - ( scrollProgress * ( rgbMin - rgbMax ) ) );
+
+        $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + opacity + ' )' );
+        $( '.navbar-brand, .nav-link, .navbar-toggler-right' ).css( 'color', 'rgb( ' + rgb + ', ' + rgb + ', ' + rgb + ' )' );
+        $( 'nav, .navbar-toggler' ).css( 'border-color', 'rgb( ' + rgb + ', ' + rgb + ', ' + rgb + ' )' );
+        $( '#backToTop' ).css( 'opacity', scrollProgress );
     }
+
+    else {
+        $( 'nav' ).css( 'background-color', 'rgba( 255, 255, 255, ' + opacityMax + ' )' );
+        $( '.navbar-brand, .nav-link, .navbar-toggler-right' ).css( 'color', 'rgb( ' + rgbMax + ', ' + rgbMax + ', ' + rgbMax + ' )' );
+        $( 'nav, .navbar-toggler' ).css( 'border-color', 'rgb( ' + rgbMax + ', ' + rgbMax + ', ' + rgbMax + ' )' );
+        $( '#backToTop' ).css( 'opacity', 1 );
+    }
+
 } );
 
 /* ON CLICK... ****************************************************************/
