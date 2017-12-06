@@ -315,13 +315,37 @@ section {
     top: 8px;
 }
 
-.navbar .brand {
-    color: rgb( 75, 75, 75 ) !important;
-    font-family: 'Pacifico', cursive;
-    text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
-                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );
+.navbar-brand {
+    color: #fff;
     padding: 8px 0;
-    position: relative;
+    margin-right: 0;
+}
+
+@media ( min-width: 992px ) {
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+}
+
+.navbar-brand > span {
+    display: block;
+    font-weight: 700;
+    line-height: 1.2rem;
+    /*text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
+                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );*/
+}
+
+.navbar-brand > span:first-of-type {
+    font-size: .65rem;
+    font-weight: 400;
+    line-height: .6rem;
+    text-transform: lowercase;
+}
+
+@media ( min-width: 992px ) {
+    .navbar-brand > span:first-of-type {
+        text-align: left;
+    }
 }
 
 .nav-link,

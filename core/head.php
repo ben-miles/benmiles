@@ -12,7 +12,7 @@
 
     <!-- FONTS -->
     <link href="/css/fontawesome.4.7.0.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Exo+2:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700,900" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="/css/bootstrap.4.0.0.a6.min.css" rel="stylesheet">
     <!-- ANIMATE -->

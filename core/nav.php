@@ -10,7 +10,7 @@
 
         <!-- Branding -->
         <a class="brand navbar-brand scroll" data-section="hey" href="#hey" target="_self">
-            <span>Ben Miles</span>
+            <span>Design by</span><span>Ben Miles</span>
             <!-- <?php echo $siteLogo; ?> -->
         </a>
 
