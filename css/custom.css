@@ -139,6 +139,19 @@ h6, .h6 {
   padding: 50px 10px 0;
 }
 
+/* Remove Bootstrap's slide effect on fade modals */
+.modal.fade .modal-dialog {
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
 .modal-content {
     border-radius: 0;
 }
