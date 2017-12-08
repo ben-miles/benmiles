@@ -263,6 +263,7 @@ h6, .h6 {
     HTML, BODY, SECTIONs
 ------------------------------------------------------------------------------*/
 html {
+    font-size: 14px;
     overflow-x: hidden;
 }
 
@@ -329,8 +330,7 @@ section {
 
 @media ( min-width: 992px ) {
     .navbar-brand {
-        margin-right: 1r
-        em;
+        margin-right: 1rem;
     }
 }
 
@@ -338,8 +338,6 @@ section {
     display: block;
     font-weight: 700;
     line-height: 1.2rem;
-    /*text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
-                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );*/
 }
 
 .navbar-brand > span:first-of-type {
@@ -383,12 +381,12 @@ section {
 }
 
 .navbar-collapse {
-	margin: 0px -14.5px;
+	margin: 0 -14.5px;
 }
 
 @media ( min-width: 992px ) {
     .navbar-collapse {
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -480,7 +478,6 @@ footer .social a:hover {
     justify-content: flex-end;
     color: #fff;
     padding-left: 10vw;
-	/*text-shadow: -2px -1px 5px #111, -6px -3px 25px #111;*/
 }
 
 .col-inner > div {
@@ -494,7 +491,6 @@ footer .social a:hover {
     .col-inner {
         padding-left: 0;
         justify-content: center;
-        /*text-shadow: 2px 0px 5px #111;*/
     }
     .col-inner > div {
     	justify-content: center;
@@ -1023,21 +1019,16 @@ footer .social a:hover {
   RESPONSIVE
 *******************************************************************************/
 
-/*Extra small devices
-Portrait phones (<576px)*/
+/* Extra small devices
+   Portrait phones (<576px)
+   no media query */
 
-html {
-  font-size: 14px;
-}
 
 /* Small devices
    Landscape phones (≥576px - <768px)
    media-breakpoint-up(sm) */
 
 @media ( min-width: 576px ){
-  html {
-    /*font-size: 16px;*/
-  }
   #portfolio .gallery .piece {
       height: 500px;
   }
@@ -1048,12 +1039,6 @@ html {
    media-breakpoint-up(md) */
 
 @media ( min-width: 768px ){
-  html {
-    /*font-size: 20px;*/
-  }
-  #portfolio {
-      /*height: 100vh;*/
-  }
   #portfolio .gallery {
       flex-direction: row;
       flex-wrap: wrap;
@@ -1074,8 +1059,6 @@ html {
    media-breakpoint-up(lg) */
 
 @media ( min-width: 992px ){
-    html {
-    }
     nav > .container {
         width: inherit;
     }
@@ -1094,5 +1077,4 @@ html {
 /* Extra large devices
    Desktops (≥1200px) */
 
-@media ( min-width: 1200px ){
-}
+@media ( min-width: 1200px ){}
