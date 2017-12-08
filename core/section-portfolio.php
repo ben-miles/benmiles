@@ -1,10 +1,3 @@
-<?php
-$output = '';
-foreach( $arrayPortfolio as $arrayPortfolioPiece ){
-    $output .= displayPortfolioPiece( $arrayPortfolioPiece );
-}
-?>
-
 <!-- port'o'folio (a kid in middle school said it like that once and everybody laughed) -->
 <section id="portfolio">
 
@@ -50,7 +43,7 @@ foreach( $arrayPortfolio as $arrayPortfolioPiece ){
 
             <!-- gallery -->
             <div class="row animated" id="gallery" data-animation="fadeIn" style="animation-delay: 0.4s;">
-                <?php echo $output; ?>
+                <?php buildPortfolio( $arrayPortfolio ); ?>
             </div>
             <!-- / gallery -->
 
