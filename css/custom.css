@@ -251,6 +251,42 @@ h6, .h6 {
 /*******************************************************************************
   COMMON
 *******************************************************************************/
+.social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.social a {
+    color: #fff;
+}
+
+.meta {
+    border-bottom: 1px solid #999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	line-height: 1.5;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.meta > small:before {
+    font-family: 'fontAwesome';
+    margin-right: 0.3em;
+}
+.meta > .date:before {
+    content: '\f073';
+}
+
+.meta > .cats:before {
+    content: '\f07c';
+}
+
+.meta > .tags:before {
+    content: '\f02c';
+}
 
 #backToTop {
     position: fixed;
@@ -388,21 +424,6 @@ section {
     .navbar-collapse {
         margin: 0;
     }
-}
-
-/*------------------------------------------------------------------------------
-    Content
-------------------------------------------------------------------------------*/
-
-.social {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-.social a {
-    color: #fff;
 }
 
 /*------------------------------------------------------------------------------
