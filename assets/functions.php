@@ -74,13 +74,7 @@ function buildPortfolio( $arrayPortfolio ){
         $colSizes = ( isset( $arrayPortfolioPiece['img']['thumb']['size'] ) && $arrayPortfolioPiece['img']['thumb']['size'] === 'wide' ) ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
 
         $output .= <<<OUTPUT
-        <div class="gallery-item $catsMeta $tagsMeta $colSizes"
-            data-id = "$k"
-            data-title = "$title"
-            data-date = "$date"
-            data-description = "$description"
-            data-link = "$link"
-            data-imageFeatured = "{$img['gallery'][0]['full']}" >
+        <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k">
             <a href="javascript:void(0)">
                 <div class="text">
                     <div class="info">
@@ -89,13 +83,9 @@ function buildPortfolio( $arrayPortfolio ){
                                 <h3>$title</h3>
                             </div>
                             <div class="meta">
-                                <small class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;$dateDisp</small>
-                                <small class="cats"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;$catsDisp</small>
-                                <small class="tags"><i class="fa fa-tags" aria-hidden="true"></i>&nbsp;$tagsDisp</small>
-                            </div>
-                            <div class="body">
-                                <!--p>$excerpt</p-->
-                                <!--a href="$link" target="_blank">$link</a-->
+                                <small class="date">$dateDisp</small>
+                                <small class="cats">$catsDisp</small>
+                                <small class="tags">$tagsDisp</small>
                             </div>
                         </div>
                     </div>
