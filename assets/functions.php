@@ -40,68 +40,64 @@ function excerpt( $string, $count ){
 }
 
 /*******************************************************************************
-* displayPortfolioPiece
+* buildPortfolio
 * Generates a responsive gallery item from an array of item information
 *** $arrayPortfolioPiece: The input array.
 *******************************************************************************/
-function displayPortfolioPiece( $arrayPortfolioPiece = array() ){
-    extract( $arrayPortfolioPiece );
+function buildPortfolio( $arrayPortfolio ){
+    $output = '';
+    foreach( $arrayPortfolio as $k => $arrayPortfolioPiece ){
 
-    $title = ( !empty( $client ) ) ? $client . ' - ' . $title : $title;
-    $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
-    $excerpt = excerpt( $description, 20 );
+        extract( $arrayPortfolioPiece );
 
-    // cats
-    if( is_array( $cats ) && sizeof( $cats ) > 1 ){
-        sort( $cats, SORT_NATURAL | SORT_FLAG_CASE );
-    }
-    $catsDisp = implode( ', ', $cats );
-    $catsMeta = strtolower( $catsDisp );
-    $catsMeta = str_replace( ',', '', $catsMeta );
+        $title = ( !empty( $client ) ) ? $client . ' - ' . $title : $title;
+        $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
+        $excerpt = excerpt( $description, 20 );
 
-    // tags
-    if( is_array( $tags && sizeof( $tags ) > 1 ) ){
-        sort( $tags, SORT_NATURAL | SORT_FLAG_CASE );
-    }
-    $tagsDisp = implode( ', ', $tags );
-    $tagsMeta = strtolower( $tagsDisp );
-    $tagsMeta = str_replace( ' ', '-', $tagsMeta ); // replace spaces with hyphens
-    $tagsMeta = str_replace( ',-', ' ', $tagsMeta ); // replace commahyphens with spaces, aren't I so clever I HATE REGEX// tags
+        // cats
+        if( is_array( $cats ) && sizeof( $cats ) > 1 ){
+            sort( $cats, SORT_NATURAL | SORT_FLAG_CASE );
+        }
+        $catsDisp = implode( ', ', $cats );
+        $catsMeta = strtolower( $catsDisp );
+        $catsMeta = str_replace( ',', '', $catsMeta );
 
-    $colSizes = ( isset( $arrayPortfolioPiece['size'] ) && $arrayPortfolioPiece['size'] === 'wide' ) ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
+        // tags
+        if( is_array( $tags && sizeof( $tags ) > 1 ) ){
+            sort( $tags, SORT_NATURAL | SORT_FLAG_CASE );
+        }
+        $tagsDisp = implode( ', ', $tags );
+        $tagsMeta = strtolower( $tagsDisp );
+        $tagsMeta = str_replace( ' ', '-', $tagsMeta ); // replace spaces with hyphens
+        $tagsMeta = str_replace( ',-', ' ', $tagsMeta ); // replace commahyphens with spaces, aren't I so clever I HATE REGEX
 
-    $output = <<<OUTPUT
-    <div class="gallery-item $catsMeta $tagsMeta $colSizes"
-        data-title = "$title"
-        data-date = "$date"
-        data-description = "$description"
-        data-link = "$link"
-        data-imageFeatured = "$images[0]" >
-        <a href="javascript:void(0)">
-            <div class="text">
-                <div class="info">
-                    <div class="info-inner">
-                        <div class="title">
-                            <h3>$title</h3>
-                        </div>
-                        <div class="meta">
-                            <small class="date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;$dateDisp</small>
-                            <small class="cats"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;$catsDisp</small>
-                            <small class="tags"><i class="fa fa-tags" aria-hidden="true"></i>&nbsp;$tagsDisp</small>
-                        </div>
-                        <div class="body">
-                            <!--p>$excerpt</p-->
-                            <!--a href="$link" target="_blank">$link</a-->
+        $colSizes = ( isset( $arrayPortfolioPiece['img']['thumb']['size'] ) && $arrayPortfolioPiece['img']['thumb']['size'] === 'wide' ) ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
+
+        $output .= <<<OUTPUT
+        <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k">
+            <a href="javascript:void(0)">
+                <div class="text">
+                    <div class="info">
+                        <div class="info-inner">
+                            <div class="title">
+                                <h3>$title</h3>
+                            </div>
+                            <div class="meta">
+                                <small class="date">$dateDisp</small>
+                                <small class="cats">$catsDisp</small>
+                                <small class="tags">$tagsDisp</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <img src="/img/portfolio/$images[thumb]" />
-        </a>
-    </div>
+                <img src="/img/portfolio/{$img['thumb']['path']}" />
+            </a>
+        </div>
 OUTPUT;
 
-    return $output;
+    }
+
+    echo $output;
 
 }
 

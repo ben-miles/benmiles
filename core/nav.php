@@ -4,14 +4,12 @@
 
         <!-- Mobile Menu Toggle -->
         <button class="btn btn-default navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
 
         <!-- Branding -->
         <a class="brand navbar-brand scroll" data-section="hey" href="#hey" target="_self">
             <span>Design by</span><span>Ben Miles</span>
-            <!-- <?php echo $siteLogo; ?> -->
         </a>
 
         <!-- Menu Items -->

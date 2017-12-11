@@ -139,6 +139,19 @@ h6, .h6 {
   padding: 50px 10px 0;
 }
 
+/* Remove Bootstrap's slide effect on fade modals */
+.modal.fade .modal-dialog {
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
 .modal-content {
     border-radius: 0;
 }
@@ -183,6 +196,11 @@ h6, .h6 {
   padding: 0 15px;
 }
 
+a.external {
+    display: block;
+	margin-top: 10px;
+}
+
 .modal .image {
     background-color: #efefef;
     background-position: center;
@@ -208,19 +226,26 @@ h6, .h6 {
 	padding-bottom: 15px;
 }
 
-/*.modal .thumbs {
-  display: flex;
-  justify-content: flex-start;
+.modal .thumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
 }
 
 .modal .thumb {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.modal .thumb img {
+    height: 50px;
+    width: auto;
+}
 
 @media (min-width: 768px) {
     .modal .header h2 {
@@ -238,6 +263,42 @@ h6, .h6 {
 /*******************************************************************************
   COMMON
 *******************************************************************************/
+.social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.social a {
+    color: #fff;
+}
+
+.meta {
+    border-bottom: 1px solid #999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	line-height: 1.5;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.meta > small:before {
+    font-family: 'fontAwesome';
+    margin-right: 0.3em;
+}
+.meta > .date:before {
+    content: '\f073';
+}
+
+.meta > .cats:before {
+    content: '\f07c';
+}
+
+.meta > .tags:before {
+    content: '\f02c';
+}
 
 #backToTop {
     position: fixed;
@@ -250,6 +311,7 @@ h6, .h6 {
     HTML, BODY, SECTIONs
 ------------------------------------------------------------------------------*/
 html {
+    font-size: 14px;
     overflow-x: hidden;
 }
 
@@ -324,8 +386,6 @@ section {
     display: block;
     font-weight: 700;
     line-height: 1.2rem;
-    /*text-shadow: -0.04em -0.02em 0 rgba( 25, 25, 25, 0.75 ),
-                 0.03em 0.01em 0 rgba( 255, 255, 255, 0.75 );*/
 }
 
 .navbar-brand > span:first-of-type {
@@ -369,28 +429,13 @@ section {
 }
 
 .navbar-collapse {
-	margin: 0px -14.5px;
+	margin: 0 -14.5px;
 }
 
 @media ( min-width: 992px ) {
     .navbar-collapse {
-        margin: 0px;
+        margin: 0;
     }
-}
-
-/*------------------------------------------------------------------------------
-    Content
-------------------------------------------------------------------------------*/
-
-.social {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-.social a {
-    color: #fff;
 }
 
 /*------------------------------------------------------------------------------
@@ -403,21 +448,10 @@ footer {
 }
 
 footer .social {
-    font-size: 3rem;
+    font-size: 30px;
     margin: 0;
-    padding: 30px 85px 30px 30px;
-}
-
-@media ( min-width: 576px ){
-    footer .social {
-        font-size: 4rem;
-    }
-}
-
-@media ( min-width: 768px ){
-    footer .social {
-        padding: 30px 0;
-    }
+    padding: 30px 60px 17px 0;
+    line-height: .1;
 }
 
 footer .social:hover a {
@@ -428,11 +462,29 @@ footer .social a {
     color: #fff;
     transition: opacity 0.25s;
     display: block;
-    line-height: 0.1; /* force <a> height to match fontawesome icon */
 }
 
 footer .social a:hover {
     opacity: 1;
+}
+
+@media ( min-width: 576px ){
+    footer .social {
+        font-size: 40px;
+        padding-bottom: 12px;
+    }
+}
+
+@media ( min-width: 768px ){
+    footer .social {
+        padding: 30px 0;
+    }
+}
+
+@media ( min-width: 992px ){
+    footer .social {
+        font-size: 50px;
+    }
 }
 
 /*******************************************************************************
@@ -459,7 +511,6 @@ footer .social a:hover {
     justify-content: flex-end;
     color: #fff;
     padding-left: 10vw;
-	/*text-shadow: -2px -1px 5px #111, -6px -3px 25px #111;*/
 }
 
 .col-inner > div {
@@ -473,7 +524,6 @@ footer .social a:hover {
     .col-inner {
         padding-left: 0;
         justify-content: center;
-        /*text-shadow: 2px 0px 5px #111;*/
     }
     .col-inner > div {
     	justify-content: center;
@@ -736,20 +786,6 @@ footer .social a:hover {
     padding-bottom: 10px;
 }
 
-.gallery-item .text .meta {
-    border-bottom: 1px solid #999;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	line-height: 1.5;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-}
-
-/*.gallery-item .text .meta > small {
-
-}*/
-
 .gallery-item img {
     border: 1px solid #ccc;
     width: 100%;
@@ -1002,21 +1038,16 @@ footer .social a:hover {
   RESPONSIVE
 *******************************************************************************/
 
-/*Extra small devices
-Portrait phones (<576px)*/
+/* Extra small devices
+   Portrait phones (<576px)
+   no media query */
 
-html {
-  font-size: 14px;
-}
 
 /* Small devices
    Landscape phones (≥576px - <768px)
    media-breakpoint-up(sm) */
 
 @media ( min-width: 576px ){
-  html {
-    /*font-size: 16px;*/
-  }
   #portfolio .gallery .piece {
       height: 500px;
   }
@@ -1027,12 +1058,6 @@ html {
    media-breakpoint-up(md) */
 
 @media ( min-width: 768px ){
-  html {
-    /*font-size: 20px;*/
-  }
-  #portfolio {
-      /*height: 100vh;*/
-  }
   #portfolio .gallery {
       flex-direction: row;
       flex-wrap: wrap;
@@ -1053,8 +1078,6 @@ html {
    media-breakpoint-up(lg) */
 
 @media ( min-width: 992px ){
-    html {
-    }
     nav > .container {
         width: inherit;
     }
@@ -1073,5 +1096,4 @@ html {
 /* Extra large devices
    Desktops (≥1200px) */
 
-@media ( min-width: 1200px ){
-}
+@media ( min-width: 1200px ){}
