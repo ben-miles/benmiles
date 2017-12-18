@@ -83,7 +83,7 @@ $galleryitem.click( this, function(){
         data = jsonPortfolio[id];
 
     // title
-    var title = $( '<h2>', { text: ( data.client ? data.client + ' - ' : '' ) + data.title } );
+    var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
     $modal.find( '.header' ).html( title );
 
     // meta

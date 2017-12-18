@@ -50,7 +50,7 @@ function buildPortfolio( $arrayPortfolio ){
 
         extract( $arrayPortfolioPiece );
 
-        $title = ( !empty( $client ) ) ? $client . ' - ' . $title : $title;
+        $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title;
         $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
         $excerpt = excerpt( $description, 20 );
 
@@ -77,17 +77,13 @@ function buildPortfolio( $arrayPortfolio ){
         <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k">
             <a href="javascript:void(0)">
                 <div class="text">
-                    <div class="info">
-                        <div class="info-inner">
-                            <div class="title">
-                                <h3>$title</h3>
-                            </div>
-                            <div class="meta">
-                                <small class="date">$dateDisp</small>
-                                <small class="cats">$catsDisp</small>
-                                <small class="tags">$tagsDisp</small>
-                            </div>
-                        </div>
+                    <div class="title">
+                        <h3>$title</h3>
+                    </div>
+                    <div class="meta">
+                        <small class="date">$dateDisp</small>
+                        <small class="cats">$catsDisp</small>
+                        <small class="tags">$tagsDisp</small>
                     </div>
                 </div>
                 <img src="/img/portfolio/{$img['thumb']['path']}" />
