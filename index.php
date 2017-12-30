@@ -10,6 +10,7 @@ TODO: image traversal ( <-- PREV and NEXT --> ) for lightbox
 TODO: multiple image support for lightbox
     TODO: make gallery thumbnails and modal display images as backgrounds for better centering/scaling. set heights/widths as needed
 TODO: gallery: normalize hight per @media query. maybe introduce a 'tall' class, too?
+TODO: Add client and agency to the modal lightbox
 */
 
 // error_reporting(0);

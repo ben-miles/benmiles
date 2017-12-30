@@ -129,11 +129,9 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
   $gallery.isotope( {
     itemSelector: '.gallery-item',
     getSortData: {
-        agency: '[dta-client]',
         category: '.cats',
-        client: '[data-agency]',
         date: '[data-date]',
-        title: '.title'
+        title: '.title h3'
     },
     sortAscending: {
         date: false
