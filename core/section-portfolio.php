@@ -23,7 +23,7 @@
                     <div class="btn-toolbar" role="toolbar" aria-label="Gallery Toolbar">
                         <div class="btn-group btn-group-filter animated" role="group" aria-label="Gallery Filter Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
                             <span class="input-group-addon">Show:&nbsp;</span>
-                            <button type="button" class="btn btn-default" data-filter=".featured">Featured</button>
+                            <!-- <button type="button" class="btn btn-default" data-filter=".featured">Featured</button> -->
                             <button type="button" class="btn btn-default" data-filter=".design">Design</button>
                             <button type="button" class="btn btn-default" data-filter=".development">Development</button>
                             <button type="button" class="btn btn-default" data-filter=".diy">DIY</button>
@@ -36,7 +36,7 @@
                             <button type="button" class="btn btn-default" data-sort="title">Title</button>
                             <button type="button" class="btn btn-default" data-sort="agency">Agency</button>
                             <button type="button" class="btn btn-default" data-sort="client">Client</button>
-                            <button type="button" class="btn btn-default" id="shuffle">Random</button>
+                            <!-- <button type="button" class="btn btn-default" id="shuffle">Random</button> -->
                         </div>
                     </div>
                 </div>
