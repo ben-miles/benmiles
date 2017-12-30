@@ -50,9 +50,11 @@ function buildPortfolio( $arrayPortfolio ){
 
         extract( $arrayPortfolioPiece );
 
-        $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title;
+        // $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title; // leaving client's name out of the title now
         $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
-        $excerpt = excerpt( $description, 20 );
+        // $excerpt = excerpt( $description, 20 );
+        $client = $client ? '<h6><small>CLIENT:</small> ' . $client . '</h6>': '';
+        $agency = $agency ? '<h6><small>AGENCY:</small> ' . $agency . '</h6>': '';
 
         // cats
         if( is_array( $cats ) && sizeof( $cats ) > 1 ){
@@ -74,11 +76,13 @@ function buildPortfolio( $arrayPortfolio ){
         $colSizes = ( isset( $arrayPortfolioPiece['img']['thumb']['size'] ) && $arrayPortfolioPiece['img']['thumb']['size'] === 'wide' ) ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
 
         $output .= <<<OUTPUT
-        <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k">
+        <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agency" data-client="$client">
             <a href="javascript:void(0)">
                 <div class="text">
                     <div class="title">
                         <h3>$title</h3>
+                        $client
+                        $agency
                     </div>
                     <div class="meta">
                         <small class="date">$dateDisp</small>

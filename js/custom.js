@@ -83,7 +83,8 @@ $galleryitem.click( this, function(){
         data = jsonPortfolio[id];
 
     // title
-    var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
+    // var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
+    var title = $( '<h2>', { text: data.title } );
     $modal.find( '.header' ).html( title );
 
     // meta
@@ -128,9 +129,11 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
   $gallery.isotope( {
     itemSelector: '.gallery-item',
     getSortData: {
+        agency: '[dta-client]',
+        category: '.cats',
+        client: '[data-agency]',
         date: '[data-date]',
-        title: '[data-title]',
-        category: '[data-category]'
+        title: '.title'
     },
     sortAscending: {
         date: false

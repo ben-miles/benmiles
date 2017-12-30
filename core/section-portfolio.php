@@ -34,6 +34,8 @@
                             <!-- <button type="button" class="btn active btn-default" data-sort="original-order">Original</button> -->
                             <button type="button" class="btn btn-default active" data-sort="date">Date</button>
                             <button type="button" class="btn btn-default" data-sort="title">Title</button>
+                            <button type="button" class="btn btn-default" data-sort="agency">Agency</button>
+                            <button type="button" class="btn btn-default" data-sort="client">Client</button>
                             <button type="button" class="btn btn-default" id="shuffle">Random</button>
                         </div>
                     </div>

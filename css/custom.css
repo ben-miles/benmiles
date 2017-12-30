@@ -746,11 +746,21 @@ footer .social a:hover {
     align-items: stretch;
 }
 
-.gallery-item .title h3 {
+.gallery-item .title {
+    text-align: center;
     border-bottom: 1px solid #999;
     margin-bottom: 5px;
     padding-bottom: 5px;
-    text-align: center;
+}
+
+.gallery-item .title h3 {
+}
+
+.gallery-item .title h6 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #777;
+	font-weight: lighter;
 }
 
 .gallery-item img {
