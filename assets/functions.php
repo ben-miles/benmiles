@@ -75,10 +75,12 @@ function buildPortfolio( $arrayPortfolio ){
         $tagsMeta = str_replace( ' ', '-', $tagsMeta ); // replace spaces with hyphens
         $tagsMeta = str_replace( ',-', ' ', $tagsMeta ); // replace commahyphens with spaces, aren't I so clever I HATE REGEX
 
-        $colSizes = ( isset( $arrayPortfolioPiece['img']['thumb']['size'] ) && $arrayPortfolioPiece['img']['thumb']['size'] === 'wide' ) ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
+        // size
+        $size = $img['thumb']['size'];
+        $colSizes = $size === 'wide' ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
 
         $output .= <<<OUTPUT
-        <div class="gallery-item $catsMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agencyMeta" data-client="$clientMeta">
+        <div class="gallery-item $size $catsMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agencyMeta" data-client="$clientMeta">
             <a href="javascript:void(0)">
                 <div class="text">
                     <div class="title">

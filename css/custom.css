@@ -782,6 +782,30 @@ footer .social a:hover {
     .gallery-item {
       margin-bottom: 30px;
     }
+    .gallery-item img {
+      height: 240px;
+    }
+    .gallery-item.tall img {
+      height: 510px;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .gallery-item img {
+      height: 210px;
+    }
+    .gallery-item.tall img {
+      height: 450px;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    .gallery-item img {
+      height: 255px;
+    }
+    .gallery-item.tall img {
+      height: 540px;
+    }
 }
 
 /*about*/
