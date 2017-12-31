@@ -83,8 +83,11 @@ $galleryitem.click( this, function(){
         data = jsonPortfolio[id];
 
     // title
-    var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
-    $modal.find( '.header' ).html( title );
+    // var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
+    var title = $( '<h2>', { text: data.title } ),
+        client = $( '<h6>', { class: 'client', html: data.client ? '<small>CLIENT: ' + data.client + '</small>' : '' } ),
+        agency = $( '<h6>', { class: 'agency', html: data.agency ? '<small>AGENCY: ' + data.agency + '</small>' : '' } );
+    $modal.find( '.header' ).html( title ).append( client, agency );
 
     // meta
     var date = $( '<small>', { text: data.date, class: 'date' } ),
@@ -128,9 +131,11 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
   $gallery.isotope( {
     itemSelector: '.gallery-item',
     getSortData: {
+        agency: '[data-agency]',
+        category: '.cats',
+        client: '[data-client]',
         date: '[data-date]',
-        title: '[data-title]',
-        category: '[data-category]'
+        title: '.title h3'
     },
     sortAscending: {
         date: false

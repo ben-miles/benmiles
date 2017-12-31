@@ -158,6 +158,7 @@ h6, .h6 {
 
 .modal .header {
 	display: flex;
+    flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
     border-bottom: 1px solid #999;
@@ -168,6 +169,14 @@ h6, .h6 {
 .modal .header h2 {
     margin: 0;
     line-height: 39px;
+}
+
+.modal .header h6 {
+    width: 50%;
+    font-size: 12px;
+	letter-spacing: 1px;
+	color: #777;
+	font-weight: lighter;
 }
 
 .modal .close {
@@ -732,7 +741,7 @@ footer .social a:hover {
 }
 
 .gallery-item .text {
-    background-color: rgba( 255, 255, 255, 0.8 );
+    background-color: rgba( 255, 255, 255, 0.9 );
     opacity: 0;
     position: absolute;
     padding: 10px 15px;
@@ -746,11 +755,21 @@ footer .social a:hover {
     align-items: stretch;
 }
 
-.gallery-item .title h3 {
+.gallery-item .title {
+    text-align: center;
     border-bottom: 1px solid #999;
     margin-bottom: 5px;
     padding-bottom: 5px;
-    text-align: center;
+}
+
+.gallery-item .title h3 {
+}
+
+.gallery-item .title h6 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #777;
+	font-weight: lighter;
 }
 
 .gallery-item img {
@@ -764,13 +783,37 @@ footer .social a:hover {
         opacity: 1;
 }
 
-.gallery-item a:hover img {
-    filter: blur(2px);
-}
+/* .gallery-item a:hover img {
+    filter: blur(2px); blur is causing img to jump on hover in chrome
+} */
 
 @media ( min-width: 576px ) {
     .gallery-item {
       margin-bottom: 30px;
+    }
+    .gallery-item img {
+      height: 240px;
+    }
+    .gallery-item.tall img {
+      height: 510px;
+    }
+}
+
+@media ( min-width: 768px ) {
+    .gallery-item img {
+      height: 210px;
+    }
+    .gallery-item.tall img {
+      height: 450px;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    .gallery-item img {
+      height: 255px;
+    }
+    .gallery-item.tall img {
+      height: 540px;
     }
 }
 

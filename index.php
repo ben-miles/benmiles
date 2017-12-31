@@ -6,12 +6,10 @@ TODO: SVG logo?
 TODO: normalize gallery item heights to prevent big gaps?
 TODO: Scrollspy for main nav?
 TODO: SEO
-TODO: smaller thumbnails for mobile
 TODO: image traversal ( <-- PREV and NEXT --> ) for lightbox
 TODO: multiple image support for lightbox
-    TODO: update data src, inc multiple images for some gallery items,
-    TODO: troubleshoot gallery output function
     TODO: make gallery thumbnails and modal display images as backgrounds for better centering/scaling. set heights/widths as needed
+    TODO: Add captions to detail images
 */
 
 // error_reporting(0);
