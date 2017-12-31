@@ -10,7 +10,6 @@ TODO: image traversal ( <-- PREV and NEXT --> ) for lightbox
 TODO: multiple image support for lightbox
     TODO: make gallery thumbnails and modal display images as backgrounds for better centering/scaling. set heights/widths as needed
     TODO: Add captions to detail images
-TODO: Add client and agency to the modal lightbox
 */
 
 // error_reporting(0);

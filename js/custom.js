@@ -84,8 +84,10 @@ $galleryitem.click( this, function(){
 
     // title
     // var title = $( '<h2>', { text: ( data.client ? data.client + ': ' : '' ) + data.title } );
-    var title = $( '<h2>', { text: data.title } );
-    $modal.find( '.header' ).html( title );
+    var title = $( '<h2>', { text: data.title } ),
+        client = $( '<h6>', { class: 'client', html: data.client ? '<small>CLIENT: ' + data.client + '</small>' : '' } ),
+        agency = $( '<h6>', { class: 'agency', html: data.agency ? '<small>AGENCY: ' + data.agency + '</small>' : '' } );
+    $modal.find( '.header' ).html( title ).append( client, agency );
 
     // meta
     var date = $( '<small>', { text: data.date, class: 'date' } ),
