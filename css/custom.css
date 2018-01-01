@@ -523,7 +523,6 @@ footer .social a:hover {
     align-items: flex-start;
     justify-content: flex-end;
     color: #fff;
-    padding-left: 10vw;
 }
 
 .col-inner > div {
@@ -533,9 +532,15 @@ footer .social a:hover {
 	justify-content: flex-end;
 }
 
-@media ( min-width: 768px ) {
+/* @media ( min-width: 768px ) {
     .col-inner {
         padding-left: 0;
+    }
+} */
+
+@media ( min-width: 768px ) {
+    .col-inner {
+        /* padding-left: 0; */
         justify-content: center;
     }
     .col-inner > div {
