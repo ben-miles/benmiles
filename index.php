@@ -12,7 +12,7 @@ TODO: multiple image support for lightbox
     TODO: Add captions to detail images
 */
 
-// error_reporting(0);
+error_reporting(0);
 require 'assets/data.php';
 require 'assets/functions.php';
 
