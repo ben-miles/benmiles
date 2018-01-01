@@ -21,8 +21,8 @@
                 <div class="col-sm-7 col-xl-8">
                     <div class="animated card about" style="animation-delay: .1s;" data-animation="fadeInUp">
                         <div class="card-block">
-                            <p class="card-text">I'm an experienced graphic designer and web developer, and avid collector of artsy-type hobbies. Born and raised in the Sunshine State, and currently based out of Florida's Space Coast. Driven by a love for learning, I am always trying new methods and media.</p>
-                            <p class="card-text">Presently working for furryLogic in historic Cocoa Village. Outside of work, I spend most of my time screen printing, making custom tables and lamps, and reading (almost done with A Feast for Crows).</p>
+                            <p class="card-text">I'm an experienced and well-rounded graphic designer and web developer, having run my own design company, and worked in lead positions for both print and web companies since the early 2000s. Born and raised here in the Sunshine State, and currently based out of Florida's Space Coast. Driven by a love for learning and refining my craft, I am always trying new methods and media.</p>
+                            <p class="card-text">Outside of work, I am an avid collector of creative hobbies. I spend most of my free time homebrewing kombucha, screen printing, making custom furniture and home decor, and reading (just finished <em>Rant</em> and <em>A Feast for Crows</em>, and started <em>A Dance with Dragons</em>).</p>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         echo displaySVG( 'phpStorm', .1 );
                         echo displaySVG( 'Photoshop', .2 );
                         echo displaySVG( 'Illustrator', .3 );
-                        echo displaySVG( 'inDesign', .4 ); 
+                        echo displaySVG( 'inDesign', .4 );
                         ?>
                     </div>
                 </div>
