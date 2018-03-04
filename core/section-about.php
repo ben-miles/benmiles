@@ -68,15 +68,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://furrylogic.net/" target="_blank">furryLogic</a></h4>
+                                    <h4 class="timeline-title">LAMP Developer & Designer</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://furrylogic.net/" target="_blank">furryLogic</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Nov. 2015 - Present</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cocoa Village, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Web Developer, Frontend, Design</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
@@ -86,15 +87,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://pipbrevard.com/" target="_blank">PIP Printing & Marketing</a></h4>
+                                    <h4 class="timeline-title">Graphic Designer, Pre-Press Specialist, Large-Format Production & Installation Lead</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://pipbrevard.com/" target="_blank">PIP Printing & Marketing</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Feb. 2012 - Nov. 2015</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Merritt Island, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Graphic Design, Pre-Press, Large-Format Production & Installation</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
@@ -104,15 +106,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://spacecoast.coupons/" target="_blank">Space Coast Coupons</a></h4>
+                                    <h4 class="timeline-title">Graphic Designer, Web Support</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://spacecoast.coupons/" target="_blank">Space Coast Coupons</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Nov. 2011 - Feb. 2012</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Merritt Island, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Graphic Designer, Web Support</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
@@ -122,15 +125,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://bcgm3.com/" target="_blank">BCGM3 Studios</a></h4>
+                                    <h4 class="timeline-title">Owner, Graphic Designer, Web Developer</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://bcgm3.com/" target="_blank">BCGM3 Studios</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Apr. 2010 - Feb. 2012</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Merritt Island, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Owner, Graphic Designer, Web Designer</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
@@ -140,15 +144,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://svad.cah.ucf.edu/" target="_blank">University of Central Florida</a></h4>
+                                    <h4 class="timeline-title">Bachelors of Fine Arts in Graphic Design</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://svad.cah.ucf.edu/" target="_blank">University of Central Florida</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2006 - 2009</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Orlando, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Bachelors of Fine Arts in Graphic Design</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
@@ -158,15 +163,16 @@
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="http://easternflorida.edu/" target="_blank">Eastern Florida State College</a></h4>
+                                    <h4 class="timeline-title">Associates of Arts with a Concentration in Design</h4>
                                     <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://easternflorida.edu/" target="_blank">Eastern Florida State College</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2004 - 2006</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cocoa, FL</small>
                                     </p>
                                 </div>
-                                <div class="timeline-body">
-                                    <p>Associates of Arts with a Concentration in Design</p>
-                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
                             </div>
                         </li>
 
