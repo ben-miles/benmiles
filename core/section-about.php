@@ -62,7 +62,6 @@
                 <div class="col-md-7 col-xl-8">
                     <ul class="timeline">
 
-                        <li class="timeline-inverted">
                         <li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -82,6 +81,8 @@
                             </div>
                         </li>
 
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge" style="background: #739c43;">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
@@ -100,7 +101,7 @@
                         </li>
 
                         <li>
-                            <div class="timeline-badge success">
+                            <div class="timeline-badge" style="background: #bdab49;">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
@@ -138,7 +139,7 @@
                         </li>
 
                         <li>
-                            <div class="timeline-badge success">
+                            <div class="timeline-badge" style="background: #f0954f;">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
@@ -157,7 +158,7 @@
                         </li>
 
                         <li class="timeline-inverted">
-                            <div class="timeline-badge danger">
+                            <div class="timeline-badge" style="background: #e66f4f;">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
