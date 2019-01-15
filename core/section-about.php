@@ -102,6 +102,25 @@
 
                         <li class="timeline-inverted">
                             <div class="timeline-badge success">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-panel animated" data-animation="fadeInUp">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Art Director, Graphic Designer & Developer</h4>
+                                    <p>
+                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://shire-digital.com/" target="_blank">Shire Digital Solutions</a></small>
+                                        <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;May 2018 - Present</small>
+                                        <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cocoa Beach, FL</small>
+                                    </p>
+                                </div>
+                                <!-- <div class="timeline-body">
+                                    <p></p>
+                                </div> -->
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge" style="background: #739c43;">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
@@ -120,7 +139,7 @@
                         </li>
 
                         <li>
-                            <div class="timeline-badge success">
+                            <div class="timeline-badge" style="background: #bdab49;">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
@@ -158,8 +177,8 @@
                         </li>
 
                         <li>
-                            <div class="timeline-badge warning">
-                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            <div class="timeline-badge" style="background: #f0954f;">
+                                <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
@@ -177,7 +196,7 @@
                         </li>
 
                         <li class="timeline-inverted">
-                            <div class="timeline-badge danger">
+                            <div class="timeline-badge" style="background: #e66f4f;">
                                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
