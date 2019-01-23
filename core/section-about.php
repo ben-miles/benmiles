@@ -61,18 +61,18 @@
             <div class="row">
                 <div class="col-md-7 col-xl-8">
                     <ul class="timeline">
-
-						<li class="timeline-inverted">
-							<div class="timeline-badge warning">
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success">
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Web Developer & Graphic Designer</h4>
+                                    <h4 class="timeline-title">Art Director, Graphic Designer & Developer</h4>
                                     <p>
                                         <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://shire-digital.com/" target="_blank">Shire Digital Solutions</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;May 2018 - Present</small>
-                                        <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;[Remote]</small>
+                                        <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cocoa Beach, FL</small>
                                     </p>
                                 </div>
                                 <!-- <div class="timeline-body">
@@ -92,25 +92,6 @@
                                         <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://pipbrevard.com/" target="_blank">PIP Printing & Marketing</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Nov. 2017 - May 2018</small>
                                         <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Merritt Island, FL</small>
-                                    </p>
-                                </div>
-                                <!-- <div class="timeline-body">
-                                    <p></p>
-                                </div> -->
-                            </div>
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success">
-                                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                            </div>
-                            <div class="timeline-panel animated" data-animation="fadeInUp">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Art Director, Graphic Designer & Developer</h4>
-                                    <p>
-                                        <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://shire-digital.com/" target="_blank">Shire Digital Solutions</a></small>
-                                        <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;May 2018 - Present</small>
-                                        <small class="text-muted"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Cocoa Beach, FL</small>
                                     </p>
                                 </div>
                                 <!-- <div class="timeline-body">
