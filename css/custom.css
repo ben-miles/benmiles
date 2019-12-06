@@ -822,7 +822,7 @@ footer .social a:hover {
     }
 }
 
-/*about*/
+/* ABOUT */
 
 #about {
     background-attachment: scroll;
@@ -849,6 +849,8 @@ footer .social a:hover {
     }
 }
 
+/* SVG */
+
 .svg-row {
         display: flex;
         flex-direction: row;
@@ -857,6 +859,11 @@ footer .social a:hover {
         justify-content: space-around;
         margin: 0 auto 2.5rem;
         max-width: 500px;
+}
+
+.svg path, 
+.svg polygon {
+	transition: fill 0.25s;
 }
 
 .svg {
@@ -868,12 +875,10 @@ footer .social a:hover {
 .svg.javascript {
     align-self: flex-end;
 }
-
 .svg.php {
     padding-top: 7%;
     width: 90px;
 }
-
 .svg.bootstrap,
 .svg.mysql,
 .svg.jquery,
@@ -882,6 +887,23 @@ footer .social a:hover {
     width: 150px;
 }
 
+/* SVG: Hover */
+
+.svg.html5:hover path {
+    fill: #264de4;
+}
+.svg.css3:hover path,
+.svg.css3:hover polygon {
+    fill: #e44d26;
+}
+.svg.javascript:hover path {
+    fill: #efc725;
+}
+.svg.php:hover path {
+    fill: #5b69a6;
+}
+
+ 
 /* timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive */
 .timeline {
     border-top: 1px solid #fff;
