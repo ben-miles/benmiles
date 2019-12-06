@@ -61,14 +61,14 @@
             <div class="row">
                 <div class="col-md-7 col-xl-8">
                     <ul class="timeline">
-                        
+
                         <li class="timeline-inverted">
                             <div class="timeline-badge success">
                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                             </div>
                             <div class="timeline-panel animated" data-animation="fadeInUp">
                                 <div class="timeline-heading">
-                                    <h4 class="timeline-title">Art Director, Graphic Designer & Developer</h4>
+                                    <h4 class="timeline-title">Art Director & Web Developer</h4>
                                     <p>
                                         <small class="text-muted"><i class="fa fa-group" aria-hidden="true"></i>&nbsp;<a href="http://shire-digital.com/" target="_blank">Shire Digital Solutions</a></small>
                                         <small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;May 2018 - Present</small>
@@ -81,7 +81,7 @@
                             </div>
                         </li>
 
-                        <li>
+						<li>
                             <div class="timeline-badge success">
                                 <i class="fa fa-building" aria-hidden="true"></i>
                             </div>
