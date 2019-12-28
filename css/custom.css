@@ -740,9 +740,18 @@ footer .social a:hover {
 }
 
 .gallery-item > a {
+    box-shadow: 0 10px 14px rgba(0,0,0,0.75);
     color: #292b2c;
     display: block;
     text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+@media ( min-width: 576px ) {
+    .gallery-item > a:hover {
+        box-shadow: 0 20px 25px rgba(0,0,0,0.5);
+        transform: scale(1.1);
+    }
 }
 
 .gallery-item .text {
@@ -760,6 +769,12 @@ footer .social a:hover {
     align-items: stretch;
 }
 
+@media ( min-width: 576px ) {
+    .gallery-item .text {
+        width: 100%;
+    }
+}
+
 .gallery-item .title {
     text-align: center;
     border-bottom: 1px solid #999;
@@ -767,8 +782,8 @@ footer .social a:hover {
     padding-bottom: 5px;
 }
 
-.gallery-item .title h3 {
-}
+/* .gallery-item .title h3 {
+} */
 
 .gallery-item .title h6 {
 	font-size: 12px;
@@ -822,7 +837,7 @@ footer .social a:hover {
     }
 }
 
-/*about*/
+/* ABOUT */
 
 #about {
     background-attachment: scroll;
@@ -849,6 +864,8 @@ footer .social a:hover {
     }
 }
 
+/* SVG */
+
 .svg-row {
         display: flex;
         flex-direction: row;
@@ -857,6 +874,11 @@ footer .social a:hover {
         justify-content: space-around;
         margin: 0 auto 2.5rem;
         max-width: 500px;
+}
+
+.svg path, 
+.svg polygon {
+	transition: fill 0.25s;
 }
 
 .svg {
@@ -868,12 +890,10 @@ footer .social a:hover {
 .svg.javascript {
     align-self: flex-end;
 }
-
 .svg.php {
     padding-top: 7%;
     width: 90px;
 }
-
 .svg.bootstrap,
 .svg.mysql,
 .svg.jquery,
@@ -882,6 +902,23 @@ footer .social a:hover {
     width: 150px;
 }
 
+/* SVG: Hover */
+
+.svg.html5:hover path {
+    fill: #264de4;
+}
+.svg.css3:hover path,
+.svg.css3:hover polygon {
+    fill: #e44d26;
+}
+.svg.javascript:hover path {
+    fill: #efc725;
+}
+.svg.php:hover path {
+    fill: #5b69a6;
+}
+
+ 
 /* timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive */
 .timeline {
     border-top: 1px solid #fff;
