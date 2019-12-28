@@ -740,9 +740,18 @@ footer .social a:hover {
 }
 
 .gallery-item > a {
+    box-shadow: 0 10px 14px rgba(0,0,0,0.75);
     color: #292b2c;
     display: block;
     text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+@media ( min-width: 576px ) {
+    .gallery-item > a:hover {
+        box-shadow: 0 20px 25px rgba(0,0,0,0.5);
+        transform: scale(1.1);
+    }
 }
 
 .gallery-item .text {
@@ -760,6 +769,12 @@ footer .social a:hover {
     align-items: stretch;
 }
 
+@media ( min-width: 576px ) {
+    .gallery-item .text {
+        width: 100%;
+    }
+}
+
 .gallery-item .title {
     text-align: center;
     border-bottom: 1px solid #999;
@@ -767,8 +782,8 @@ footer .social a:hover {
     padding-bottom: 5px;
 }
 
-.gallery-item .title h3 {
-}
+/* .gallery-item .title h3 {
+} */
 
 .gallery-item .title h6 {
 	font-size: 12px;
