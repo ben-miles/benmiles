@@ -762,7 +762,7 @@ footer .social a:hover {
     width: calc( 100% - 30px);
     height: 100%;
     transition: opacity .25s ease-in-out;
-	z-index: 1; /* blur effect on image doesn't work without this */
+	z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -782,9 +782,6 @@ footer .social a:hover {
     padding-bottom: 5px;
 }
 
-/* .gallery-item .title h3 {
-} */
-
 .gallery-item .title h6 {
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -802,10 +799,6 @@ footer .social a:hover {
 .gallery-item a:hover .text {
         opacity: 1;
 }
-
-/* .gallery-item a:hover img {
-    filter: blur(2px); blur is causing img to jump on hover in chrome
-} */
 
 @media ( min-width: 576px ) {
     .gallery-item {
