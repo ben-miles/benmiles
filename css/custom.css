@@ -152,6 +152,11 @@ h6, .h6 {
     transform: none !important;
 }
 
+/* Negate Bootstrap's extra padding on modal-open */
+body.modal-open {
+    padding-right: 0 !important;
+}
+
 .modal-content {
     border-radius: 0;
 }
