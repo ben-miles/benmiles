@@ -29,15 +29,15 @@
                             <button type="button" class="btn btn-default" data-filter=".diy">DIY</button>
                             <button type="button" class="btn btn-default active" data-filter="*">All</button>
                         </div>
-                        <div class="btn-group btn-group-sort animated" role="group" aria-label="Gallery Sort Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
+                        <!-- <div class="btn-group btn-group-sort animated" role="group" aria-label="Gallery Sort Buttons" data-animation="fadeIn" style="animation-delay: 0.2s;">
                             <span class="input-group-addon">Sort:&nbsp;</span>
-                            <!-- <button type="button" class="btn active btn-default" data-sort="original-order">Original</button> -->
+                            <button type="button" class="btn active btn-default" data-sort="original-order">Original</button>
                             <button type="button" class="btn btn-default active" data-sort="date">Date</button>
                             <button type="button" class="btn btn-default" data-sort="title">Title</button>
                             <button type="button" class="btn btn-default" data-sort="agency">Agency</button>
                             <button type="button" class="btn btn-default" data-sort="client">Client</button>
-                            <!-- <button type="button" class="btn btn-default" id="shuffle">Random</button> -->
-                        </div>
+                            <button type="button" class="btn btn-default" id="shuffle">Random</button>
+                        </div> -->
                     </div>
                 </div>
             </div>
