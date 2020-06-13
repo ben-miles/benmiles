@@ -720,8 +720,7 @@ footer .social a:hover {
 
 .btn-group {
 	margin-bottom: 15px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
 }
 
