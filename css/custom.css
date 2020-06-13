@@ -731,8 +731,12 @@ footer .social a:hover {
     }
 }
 
-.btn-toolbar .btn.active {
+.btn-toolbar .btn:hover {
     background-color: #ccc;
+}
+
+.btn-toolbar .btn.active {
+    background-color: #fff;
     color: #333;
 }
 
