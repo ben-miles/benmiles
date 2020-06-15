@@ -32,8 +32,8 @@
                 <div class="col-md-7 col-xl-8">
                     <div class="svg-row">
                         <?php
-                        echo displaySVG( 'HTML 5' );
-                        echo displaySVG( 'CSS 3', .1 );
+                        echo displaySVG( 'CSS' );
+                        echo displaySVG( 'HTML', .1 );
                         echo displaySVG( 'JavaScript', .2 );
                         echo displaySVG( 'PHP', .3 );
                         echo displaySVG( 'mySQL', .4 );
@@ -43,16 +43,19 @@
                         <?php
                         echo displaySVG( 'Bootstrap', .1 );
                         echo displaySVG( 'jQuery', .2 );
-                        echo displaySVG( 'Joomla!', .3 );
-                        echo displaySVG( 'WordPress', .4 );
+                        echo displaySVG( 'Laravel', .3 );
+                        echo displaySVG( 'Vue', .4 );
+                        echo displaySVG( 'WordPress', .5 );
+                        
                         ?>
                     </div>
                     <div class="svg-row">
                         <?php
-                        echo displaySVG( 'phpStorm', .1 );
-                        echo displaySVG( 'Photoshop', .2 );
-                        echo displaySVG( 'Illustrator', .3 );
-                        echo displaySVG( 'inDesign', .4 );
+                        echo displaySVG( 'phpStorm', .2 );
+                        echo displaySVG( 'VSCode', .3 );
+                        echo displaySVG( 'Photoshop', .4 );
+                        echo displaySVG( 'Illustrator', .5 );
+                        echo displaySVG( 'inDesign', .6 );
                         ?>
                     </div>
                 </div>

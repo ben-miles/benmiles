@@ -891,48 +891,32 @@ footer .social a:hover {
         max-width: 500px;
 }
 
-.svg path, 
-.svg polygon {
-	transition: fill 0.25s;
-}
-
 .svg {
-    height: auto;
-    width: 80px;
     padding: 0 15px;
 }
 
-.svg.javascript {
-    align-self: flex-end;
-}
-.svg.php {
-    padding-top: 7%;
-    width: 90px;
-}
-.svg.bootstrap,
-.svg.mysql,
-.svg.jquery,
-.svg.joomla,
-.svg.wordpress {
-    width: 150px;
+.svg svg {
+    width: 100%;
+    height: auto;
 }
 
-/* SVG: Hover */
-
-.svg.html5:hover path {
-    fill: #264de4;
-}
-.svg.css3:hover path,
-.svg.css3:hover polygon {
-    fill: #e44d26;
-}
-.svg.javascript:hover path {
-    fill: #efc725;
-}
-.svg.php:hover path {
-    fill: #5b69a6;
+svg #mask {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
 }
 
+svg #color {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+svg:hover #mask {
+    opacity: 0;
+}
+
+svg:hover #color {
+    opacity: 1;
+}
  
 /* timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive */
 .timeline {
