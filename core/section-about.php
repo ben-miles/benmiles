@@ -21,8 +21,12 @@
                 <div class="col-sm-7 col-xl-8">
                     <div class="animated card about" style="animation-delay: .1s;" data-animation="fadeInUp">
                         <div class="card-block">
-                            <p class="card-text">I'm an experienced and well-rounded graphic designer and web developer, having run my own design company, and worked in lead positions for both print and web companies since the early 2000s. Born and raised here in the Sunshine State, and currently based out of Florida's Space Coast. Driven by a love for learning and refining my craft, I am always trying new methods and media.</p>
-                            <p class="card-text">Outside of work, I am an avid collector of creative hobbies. I spend most of my free time homebrewing kombucha, screen printing, making custom furniture and home decor, and reading (just finished <em>Rant</em> and <em>A Feast for Crows</em>, and started <em>A Dance with Dragons</em>).</p>
+                            <p class="card-text"><strong>I am an experienced and well-rounded graphic designer and web developer in central Florida.</strong> 
+                                <br/><strong>I have never stopped drawing and creating.</strong> 
+                            </p>
+                            <p class="card-text">
+                                I have run my own design company, and worked in lead positions for established print and web agencies, both as an artist and developer. I have always enjoyed the juxtaposition of art and engineering that a career in commercial design offers. </p>
+                            <p class="card-text">Outside of work, I am an avid collector of creative hobbies. I spend most of my free time gardening, homebrewing and fermenting, and watching movies. </p>
                         </div>
                     </div>
                 </div>
