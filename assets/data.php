@@ -4,16 +4,16 @@
 $arrayPortfolio = array(
 
     array(
-        'title' => 'Shire-Digital.com',
-        'agency' => "Shire Digital Solutions",
+        'title' => 'Shire Digital Solutions Website',
+        'agency' => NULL,
         'client' => "Shire Digital Solutions",
         'date' => '2018-04-10',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
+            'Bootstrap',
             'WordPress'
         ),
-        'description' => '',
+        'description' => 'Originally written as HTML+CSS with Bootstrap, then redone with WordPress using the Layers theme. Features SVG illustrations, parallax backgrounds, embedded Facebook content and a contact form. Copy by Nick Fuller of Shire Digital Solutions, and I handled all design tasks, from concept through implementation.',
         'link' => "https://shire-digital.com/",
         'img' => array(
             'thumb' => array(
@@ -30,16 +30,16 @@ $arrayPortfolio = array(
     ),
 
     array(
-        'title' => 'DrBelinda&shy;Barnett.com',
+        'title' => 'Counseling Website for Belinda Barnett',
         'agency' => "Shire Digital Solutions",
         'client' => "Dr. Belinda Barnett",
         'date' => '2020-01-31',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'WordPress',
+            'Elementor'
         ),
-        'description' => '',
+        'description' => 'Copy by Nick Fuller of Shire Digital Solutions and Dr. Belinda Barnett. Portrait photography by Jen Barker Worley. Stock photos by Adobe. I took care of all website design, development and maintenance tasks.',
         'link' => "https://drbelindabarnett.com/",
         'img' => array(
             'thumb' => array(
@@ -56,16 +56,16 @@ $arrayPortfolio = array(
     ),
 
     array(
-        'title' => 'TaraGenovese.com',
+        'title' => 'Counseling Website for Tara Genovese',
         'agency' => "Shire Digital Solutions",
         'client' => "Tara Genovese",
         'date' => '2019-08-08',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'WordPress',
+            'Elementor'
         ),
-        'description' => '',
+        'description' => 'Copy by Nick Fuller of Shire Digital Solutions. Stock photos by Adobe. I took care of coordinating with client regarding portrait photos, and design from concept to implementation. Built with WordPress, a custom child theme of Sydney, and Elementor. I also managed and implemented Google Ads for this site.',
         'link' => "https://taragenovese.com/",
         'img' => array(
             'thumb' => array(
@@ -82,16 +82,16 @@ $arrayPortfolio = array(
     ),
 
     array(
-        'title' => 'ClearviewTesting&shy;Centers.com',
+        'title' => 'Clearview Testing Centers Website',
         'agency' => "Shire Digital Solutions",
         'client' => "Clearview Testing Centers",
         'date' => '2019-01-15',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'WordPress',
+            'Elementor'
         ),
-        'description' => '',
+        'description' => 'Copy by Nick Fuller of Shire Digital Solutions and Forrest and Carol Pulley of Clearview Testing Centers. I handled design from concept to execution, including a logo and the website.',
         'link' => "https://clearviewtestingcenters.com/",
         'img' => array(
             'thumb' => array(
@@ -114,8 +114,7 @@ $arrayPortfolio = array(
         'date' => '2016-05-25',
         'category' => 'Logo',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'Illustrator'
         ),
         'description' => '',
         'link' => "https://shire-digital.com/",
@@ -140,8 +139,7 @@ $arrayPortfolio = array(
         'date' => '2019-04-09',
         'category' => 'Logo',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'Illustrator'
         ),
         'description' => '',
         'link' => NULL,
@@ -166,8 +164,8 @@ $arrayPortfolio = array(
         'date' => '2019-12-30',
         'category' => 'Logo',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'Illustrator',
+            'Photoshop'
         ),
         'description' => '',
         'link' => NULL,
@@ -186,16 +184,41 @@ $arrayPortfolio = array(
     ),
 
     array(
-        'title' => 'Netwave&shy;Broadband.net',
+        'title' => 'Counseling for Resilience Website',
+        'agency' => "Shire Digital Solutions",
+        'client' => 'Counseling for Resilience',
+        'date' => '2019-12-30',
+        'category' => 'Website',
+        'tags' => array(
+            'SquareSpace'
+        ),
+        'description' => '',
+        'link' => 'https://counselingforresilience.com/',
+        'img' => array(
+            'thumb' => array(
+                'path' => 'ben-miles_counseling-for-resilience-website_gt.jpg',
+                'size' => 'tall'
+            ),
+            'gallery' => array(
+                array(
+                    'full' => 'ben-miles_counseling-for-resilience-website_lg.jpg',
+                    'thumb' => 'ben-miles_counseling-for-resilience-website_dt.jpg'
+                )
+            )
+        )
+    ),
+
+    array(
+        'title' => 'Netwave Broadband',
         'agency' => "Shire Digital Solutions",
         'client' => "Netwave Broadband",
         'date' => '2018-07-20',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'Laravel'
+            'PHP',
+            'Javascript'
         ),
-        'description' => '',
+        'description' => 'Website for a wireless internet service provider, for gathering new signups and acting as a customer billing portal. Developed along with Richard Hall, his focus was on backend (integrating Sonar API for new customer signups and billing), while my focus was on frontend and design. Features a lightweight custom PHP framework with Bootstrap and ScrollSpy, SVG illustrations and logos, and ScrollMagic for multi-layered parallax effects.',
         'link' => "https://netwavebroadband.net/",
         'img' => array(
             'thumb' => array(
@@ -212,14 +235,14 @@ $arrayPortfolio = array(
     ),
 
     array(
-        'title' => 'TriadCounseling&shy;Center.com',
+        'title' => 'Triad Counseling Center Website',
         'agency' => "Shire Digital Solutions",
         'client' => "Triad Counseling Center",
         'date' => '2019-01-15',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'WordPress',
+            'Elementor'
         ),
         'description' => '',
         'link' => "https://triadcounselingcenter.com/",
@@ -244,8 +267,7 @@ $arrayPortfolio = array(
         'date' => '2019-01-15',
         'category' => 'Logo',
         'tags' => array(
-            'Web Design',
-            'WordPress'
+            'Illustrator'
         ),
         'description' => '',
         'link' => "https://triadcounselingcenter.com/",
@@ -270,8 +292,8 @@ $arrayPortfolio = array(
         'date' => '2020-04-17',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'Single Page Application'
+            'VueJS',
+            'SCSS'
         ),
         'description' => '',
         'link' => NULL,
@@ -296,8 +318,9 @@ $arrayPortfolio = array(
         'date' => '2019-04-22',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
-            'Single Page Application'
+            'jQuery',
+            'SCSS',
+            'SVG'
         ),
         'description' => '',
         'link' => NULL,
@@ -322,8 +345,10 @@ $arrayPortfolio = array(
         'date' => '2017-11-11',
         'category' => 'Print',
         'tags' => array(
-            'Digital Illustration',
-            'Package Design'
+            'Digital Painting',
+            'Package Design',
+            'Painter',
+            'Photoshop'
         ),
         'description' => '<p>Edd\'N\'Bred\'s first staple homebrew, a French-style
         Saison named <em>When in Rhône,</em> was in need of a label.</p>
@@ -340,8 +365,8 @@ $arrayPortfolio = array(
         'link' => NULL,
         'img' => array(
             'thumb' => array(
-                'path' => 'ben-miles_edd-n-bred_when-in-rhone_bottle_lg.jpg', //ben-miles_edd-n-bred_when-in-rhone_isolated_gt.jpg
-                'size' => 'tall' //wide
+                'path' => 'ben-miles_edd-n-bred_when-in-rhone_bottle_lg.jpg',
+                'size' => 'tall'
             ),
             'gallery' => array(
                 array(
@@ -363,9 +388,9 @@ $arrayPortfolio = array(
         'date' => '2016-09-10',
         'category' => 'Logo',
         'tags' => array(
-            'Branding',
-            'Logo Design',
-            'Typography'
+            'Typography',
+            'Illustrator',
+            'Photoshop'
         ),
         'description' => '<p>One fine homebrew day with Logan Moore and Brad Parks
         of "Edd\'N\'Bred", we got to talking about branding.</p>
@@ -416,7 +441,9 @@ $arrayPortfolio = array(
         'tags' => array(
             'Art Direction',
             'Photography',
-            'Package Design'
+            'Package Design',
+            'InDesign',
+            'Photoshop'
         ),
         'description' => '<p>During my senior year in the Design program at the
         University of Central Florida, we were partnered with representatives from
@@ -464,8 +491,8 @@ $arrayPortfolio = array(
         'date' => '2009-09-20',
         'category' => 'Logo',
         'tags' => array(
-            'Branding',
-            'Logo Design'
+            'Illustrator',
+            'Photoshop'
         ),
         'description' => 'Jonathan Skinner, long-time friend and owner of a local PC repair service, rebranded his company in 2009. A parody of the Ghostbusters brand, this logo design job presented some unique challenges. We worked with a legal advisor with some experience in copyright law to determine how closely we could emulate the brand, and where it had to differ.',
         'link' => NULL,
@@ -490,10 +517,8 @@ $arrayPortfolio = array(
         'date' => '2011-08-23',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
             'WordPress',
-            'Custom Theme',
-            'Domain Management'
+            'Custom Theme'
         ),
         'description' => NULL,
         'link' => 'http://thevirusbusters.com/',
@@ -511,37 +536,6 @@ $arrayPortfolio = array(
         )
     ),
 
-    // array(
-    //     'title' => 'ULLetters.com',
-    //     'agency' => NULL,
-    //     'client' => 'UL Letters',
-    //     'date' => '2017-10-19',
-    //     'cats' => array(
-    //         'Website'
-    //     ),
-    //     'tags' => array(
-    //         'Web Design',
-    //         'WordPress',
-    //         'Bootstrap',
-    //         'Custom Theme',
-    //         'Domain Management'
-    //     ),
-    //     'description' => NULL,
-    //     'link' => 'http://ulletters.com/',
-    //     'img' => array(
-    //         'thumb' => array(
-    //             'path' => 'ben-miles_ul-letters-website_gt.jpg',
-    //             'size' => 'tall'
-    //         ),
-    //         'gallery' => array(
-    //             array(
-    //                 'full' => 'ben-miles_ul-letters-website_lg.jpg',
-    //                 'thumb' => 'ben-miles_ul-letters-website_dt.jpg'
-    //             )
-    //         )
-    //     )
-    // ),
-
     array(
         'title' => 'Spectre&shy;Detectors.com',
         'agency' => NULL,
@@ -549,10 +543,8 @@ $arrayPortfolio = array(
         'date' => '2014-09-15',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
             'WordPress',
-            'Custom Theme',
-            'Domain Management'
+            'Custom Theme'
         ),
         'description' => NULL,
         'link' => 'http://spectredetectors.com/',
@@ -577,7 +569,6 @@ $arrayPortfolio = array(
         'date' => '2009-03-29',
         'category' => 'Website',
         'tags' => array(
-            'Web Design',
             'WordPress',
             'Custom Theme'
         ),
@@ -596,36 +587,6 @@ $arrayPortfolio = array(
             )
         )
     ),
-
-    // array(
-    //     'title' => 'DesertAcres&shy;Stables.com',
-    //     'agency' => 'BCGM3 Studios',
-    //     'client' => 'Desert Acres Stables',
-    //     'date' => '2009-03-29',
-    //     'cats' => array(
-    //         'Website'
-    //     ),
-    //     'tags' => array(
-    //         'Web Design',
-    //         'WordPress',
-    //         'Custom Theme',
-    //         'Domain Management'
-    //     ),
-    //     'description' => NULL,
-    //     'link' => 'http://desertacresstables.com/',
-    //     'img' => array(
-    //         'thumb' => array(
-    //             'path' => 'ben-miles_desert-acres-stables-website_gt.jpg',
-    //             'size' => 'tall'
-    //         ),
-    //         'gallery' => array(
-    //             array(
-    //                 'full' => 'ben-miles_desert-acres-stables-website_lg.jpg',
-    //                 'thumb' => 'ben-miles_desert-acres-stables-website_dt.jpg'
-    //             )
-    //         )
-    //     )
-    // ),
 
     array(
         'title' => 'brewAdmin.com',
@@ -661,56 +622,54 @@ $arrayPortfolio = array(
         )
     ),
 
-    // array(
-    //     'title' => 'Kombucha, A Homemade Probiotic',
-    //     'agency' => NULL,
-    //     'client' => NULL,
-    //     'date' => '2017-05-19',
-    //     'cats' => array(
-    //         'DIY'
-    //     ),
-    //     'tags' => array(
-    //         'Fermentation',
-    //         'Home Brewing'
-    //     ),
-    //     'description' => '<p>Kombucha is half fermented beverage, and half
-    //     biology experiment.</p>
-    //     <p>Kombucha is the net result of a biological chain reaction. You
-    //     brew sweet tea and add some of the living culture. The yeast in the culture
-    //     eats the sugar and produces alcohol. The bacteria eats the alcohol and produces
-    //     acetic acid (vinegar). You harvest when the taste suits you, add fresh
-    //     fruit and seal in bottles for a secondary fermentation period.</p>
-    //     <p>I\'d brewed beer a couple times, and was ready to try something different.
-    //     Inspired by <a href="https://www.youtube.com/watch?v=Ng2zOFADe0s"
-    //     target="_blank">this video by Brad Leone</a>, I did some research and
-    //     development, and a couple weeks later I had established my own living
-    //     colony. Fast forward about six months: I\'ve got five gallons of Kombucha,
-    //     fermenting on rotation, and have produced over 150 bottles.</p>
-    //     <p>On October 25th, 2017, my Ginger Berry Kombucha took second place in <a
-    //     href="https://www.instagram.com/p/Baseb5jHbyk/" target="_blank">Mother
-    //     Kombucha\'s homebrew competition</a> in St. Petersburg, FL.</p>',
-    //     'link' => NULL,
-    //     'img' => array(
-    //         'thumb' => array(
-    //             'path' => 'ben-miles_kombucha_animation_gt.gif',
-    //             'size' => 'square'
-    //         ),
-    //         'gallery' => array(
-    //             array(
-    //                 'full' => 'ben-miles_kombucha_glass_lg.jpg',
-    //                 'thumb' => 'ben-miles_kombucha_glass_dt.jpg'
-    //             ),
-    //             array(
-    //                 'full' => 'ben-miles_kombucha_two-batches_lg.jpg',
-    //                 'thumb' => 'ben-miles_kombucha_two-batches_dt.jpg'
-    //             ),
-    //             array(
-    //                 'full' => 'ben-miles_kombucha_lg.jpg',
-    //                 'thumb' => 'ben-miles_kombucha_dt.jpg'
-    //             )
-    //         )
-    //     )
-    // ),
+    array(
+        'title' => 'Kombucha, A Homemade Probiotic',
+        'agency' => NULL,
+        'client' => NULL,
+        'date' => '2017-05-19',
+        'category' => 'DIY',
+        'tags' => array(
+            'Fermentation',
+            'Home Brewing'
+        ),
+        'description' => '<p>Kombucha is half fermented beverage, and half
+        biology experiment.</p>
+        <p>Kombucha is the net result of a biological chain reaction. You
+        brew sweet tea and add some of the living culture. The yeast in the culture
+        eats the sugar and produces alcohol. The bacteria eats the alcohol and produces
+        acetic acid (vinegar). You harvest when the taste suits you, add fresh
+        fruit and seal in bottles for a secondary fermentation period.</p>
+        <p>I\'d brewed beer a couple times, and was ready to try something different.
+        Inspired by <a href="https://www.youtube.com/watch?v=Ng2zOFADe0s"
+        target="_blank">this video by Brad Leone</a>, I did some research and
+        development, and a couple weeks later I had established my own living
+        colony. Fast forward about six months: I\'ve got five gallons of Kombucha,
+        fermenting on rotation, and have produced over 150 bottles.</p>
+        <p>On October 25th, 2017, my Ginger Berry Kombucha took second place in <a
+        href="https://www.instagram.com/p/Baseb5jHbyk/" target="_blank">Mother
+        Kombucha\'s homebrew competition</a> in St. Petersburg, FL.</p>',
+        'link' => NULL,
+        'img' => array(
+            'thumb' => array(
+                'path' => 'ben-miles_kombucha_animation_gt.gif',
+                'size' => 'square'
+            ),
+            'gallery' => array(
+                array(
+                    'full' => 'ben-miles_kombucha_glass_lg.jpg',
+                    'thumb' => 'ben-miles_kombucha_glass_dt.jpg'
+                ),
+                array(
+                    'full' => 'ben-miles_kombucha_two-batches_lg.jpg',
+                    'thumb' => 'ben-miles_kombucha_two-batches_dt.jpg'
+                ),
+                array(
+                    'full' => 'ben-miles_kombucha_lg.jpg',
+                    'thumb' => 'ben-miles_kombucha_dt.jpg'
+                )
+            )
+        )
+    ),
 
     array(
         'title' => 'Epoxy Resin Bottlecap Table',
@@ -1092,63 +1051,6 @@ $arrayPortfolio = array(
             )
         )
     ),
-
-    // array(
-    //     'title' => 'Fluid Responsive Flexbox Layout',
-    //     'agency' => NULL,
-    //     'client' => NULL,
-    //     'date' => '2016-11-25',
-    //     'cats' => array(
-    //         'Website'
-    //     ),
-    //     'tags' => array(
-    //         'Frontend',
-    //         'CSS'
-    //     ),
-    //     'description' => '',
-    //     'link' => 'https://codepen.io/benmiles/pen/XNgLzg',
-    //     'img' => array(
-    //         'thumb' => array(
-    //             'path' => 'ben-miles_codepen_responsive-flexbox-layout_gt.jpg',
-    //             'size' => 'tall'
-    //         ),
-    //         'gallery' => array(
-    //             array(
-    //                 'full' => 'ben-miles_codepen_responsive-flexbox-layout_lg.png',
-    //                 'thumb' => 'ben-miles_codepen_responsive-flexbox-layout_dt.jpg'
-    //             )
-    //         )
-    //     )
-    // ),
-
-    // array(
-    //     'title' => 'Responsive Flexbox Layout with Collapsible Menu',
-    //     'agency' => NULL,
-    //     'client' => NULL,
-    //     'date' => '2016-05-06',
-    //     'cats' => array(
-    //         'Website'
-    //     ),
-    //     'tags' => array(
-    //         'Frontend',
-    //         'CSS',
-    //         'JavaScript'
-    //     ),
-    //     'description' => '',
-    //     'link' => 'https://codepen.io/benmiles/pen/YVEWbJ',
-    //     'img' => array(
-    //         'thumb' => array(
-    //             'path' => 'ben-miles_codepen_responsive-flexbox-collapsible-menu_gt.jpg',
-    //             'size' => 'square'
-    //         ),
-    //         'gallery' => array(
-    //             array(
-    //                 'full' => 'ben-miles_codepen_responsive-flexbox-collapsible-menu_lg.png',
-    //                 'thumb' => 'ben-miles_codepen_responsive-flexbox-collapsible-menu_dt.jpg'
-    //             )
-    //         )
-    //     )
-    // )
 
 );
 
