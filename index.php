@@ -1,9 +1,5 @@
 <?php
 /*
-TODO: linkify the animated list items to portfolio subsections?
-TODO: work/edu timelines? d3.js + gantt chart: https://github.com/dk8996/Gantt-Chart
-TODO: SVG logo?
-TODO: normalize gallery item heights to prevent big gaps?
 TODO: Scrollspy for main nav?
 TODO: SEO
 TODO: image traversal ( <-- PREV and NEXT --> ) for lightbox
