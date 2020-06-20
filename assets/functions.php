@@ -50,7 +50,8 @@ function buildPortfolio( $arrayPortfolio ){
 
         extract( $arrayPortfolioPiece );
 
-        // $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title; // leaving client's name out of the title now
+        // $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title;
+        $urlDisp = ( !empty( $link ) ) ? $link : '';
         $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
         // $excerpt = excerpt( $description, 20 );
         $clientDisp = $client ? '<h6 class="client"><small>CLIENT:</small> ' . $client . '</h6>' : NULL;
@@ -85,6 +86,7 @@ function buildPortfolio( $arrayPortfolio ){
                 <div class="text">
                     <div class="title">
                         <h3>$title</h3>
+                        $urlDisp
                         $clientDisp
                         $agencyDisp
                     </div>
