@@ -91,9 +91,9 @@ $galleryitem.click( this, function(){
 
     // meta
     var date = $( '<small>', { text: data.date, class: 'date' } ),
-        cats = $( '<small>', { text: data.cats.join(', '), class: 'cats' } ),
+        category = $( '<small>', { text: data.category, class: 'category' } ),
         tags = $( '<small>', { text: data.tags.join(', '), class: 'tags' } );
-    $modal.find( '.meta' ).html( date ).append( cats ).append( tags );
+    $modal.find( '.meta' ).html( date ).append( category ).append( tags );
 
     // thumbs
     $modal.find( '.thumbs' ).html('');
@@ -131,11 +131,11 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
   $gallery.isotope( {
     itemSelector: '.gallery-item',
     getSortData: {
-        agency: '[data-agency]',
-        category: '.cats',
-        client: '[data-client]',
+        // agency: '[data-agency]',
+        // category: '.category',
+        // client: '[data-client]',
         date: '[data-date]',
-        title: '.title h3'
+        // title: '.title h3'
     },
     sortAscending: {
         date: false
@@ -145,7 +145,7 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
     },
     sortBy: 'date',
     // filter: '.featured'
-    filter: '*'
+    // filter: '*'
   } );
 } );
 

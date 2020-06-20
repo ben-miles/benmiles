@@ -304,7 +304,7 @@ a.external {
     content: '\f073';
 }
 
-.meta > .cats:before {
+.meta > .category:before {
     content: '\f07c';
 }
 

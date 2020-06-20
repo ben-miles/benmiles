@@ -8,9 +8,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Shire Digital Solutions",
         'date' => '2018-04-10',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -36,9 +34,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Dr. Belinda Barnett",
         'date' => '2020-01-31',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -64,9 +60,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Tara Genovese",
         'date' => '2019-08-08',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -92,9 +86,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Clearview Testing Centers",
         'date' => '2019-01-15',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -120,9 +112,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Shire Digital Solutions",
         'date' => '2016-05-25',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -148,9 +138,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => 'Mission Ready Counseling',
         'date' => '2019-04-09',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -176,9 +164,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => 'Counseling for Resilience',
         'date' => '2019-12-30',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -204,9 +190,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Netwave Broadband",
         'date' => '2018-07-20',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'Laravel'
@@ -232,9 +216,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Triad Counseling Center",
         'date' => '2019-01-15',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -260,9 +242,7 @@ $arrayPortfolio = array(
         'agency' => "Shire Digital Solutions",
         'client' => "Triad Counseling Center",
         'date' => '2019-01-15',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Web Design',
             'WordPress'
@@ -288,9 +268,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => NULL,
         'date' => '2020-04-17',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'Single Page Application'
@@ -316,9 +294,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => NULL,
         'date' => '2019-04-22',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'Single Page Application'
@@ -344,9 +320,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => 'Edd\'N\'Bred',
         'date' => '2017-11-11',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Digital Illustration',
             'Package Design'
@@ -387,9 +361,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => 'Edd\'N\'Bred',
         'date' => '2016-09-10',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design',
@@ -440,9 +412,7 @@ $arrayPortfolio = array(
         'agency' => 'University of Central Florida',
         'client' => 'Scholastic, Inc.',
         'date' => '2009-01-06',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Art Direction',
             'Photography',
@@ -492,9 +462,7 @@ $arrayPortfolio = array(
         'agency' => 'BCGM3 Studios',
         'client' => 'Virus Busters',
         'date' => '2009-09-20',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design'
@@ -520,9 +488,7 @@ $arrayPortfolio = array(
         'agency' => 'BCGM3 Studios',
         'client' => 'Virus Busters',
         'date' => '2011-08-23',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress',
@@ -581,9 +547,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => 'Spectre Detectors',
         'date' => '2014-09-15',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress',
@@ -611,9 +575,7 @@ $arrayPortfolio = array(
         'agency' => 'BCGM3 Studios',
         'client' => 'Professional Paperworks',
         'date' => '2009-03-29',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'WordPress',
@@ -670,9 +632,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => NULL,
         'date' => '2017-01-01',
-        'cats' => array(
-            'Website'
-        ),
+        'category' => 'Website',
         'tags' => array(
             'Web Design',
             'Bootstrap',
@@ -757,9 +717,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => NULL,
         'date' => '2015-10-30',
-        'cats' => array(
-            'DIY'
-        ),
+        'category' => 'DIY',
         'tags' => array(
             'Mixed Media',
             'Mosaic'
@@ -815,9 +773,7 @@ $arrayPortfolio = array(
         'agency' => NULL,
         'client' => NULL,
         'date' => '2014-05-16',
-        'cats' => array(
-            'DIY'
-        ),
+        'category' => 'DIY',
         'tags' => array(
             'Mixed Media'
         ),
@@ -851,9 +807,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'The Barclay Group',
         'date' => '2015-06-22',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Document Design',
             'Marketing'
@@ -887,9 +841,7 @@ $arrayPortfolio = array(
         'agency' => 'BCGM3 Studios',
         'client' => 'Sign Lords',
         'date' => '2015-03-24',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design',
@@ -920,9 +872,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'Project Ocean SEED',
         'date' => '2015-02-11',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design'
@@ -952,9 +902,7 @@ $arrayPortfolio = array(
         'agency' => 'BCGM3 Studios',
         'client' => 'Merritt Island Makos',
         'date' => '2014-06-02',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design'
@@ -988,9 +936,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'Canaveral Port Authority',
         'date' => '2014-03-18',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Branding',
             'Document Design'
@@ -1020,9 +966,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'East Coast Cabinet Co',
         'date' => '2014-02-03',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Branding',
             'Document Design'
@@ -1048,9 +992,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'Bill Mays',
         'date' => '2013-12-14',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Mixed Media',
             'Typography',
@@ -1078,9 +1020,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'PIP Printing',
         'date' => '2013-10-15',
-        'cats' => array(
-            'Logo'
-        ),
+        'category' => 'Logo',
         'tags' => array(
             'Branding',
             'Logo Design'
@@ -1106,9 +1046,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'Jay Elmo Shaw',
         'date' => '2013-09-13',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Cover Art',
             'Text Design',
@@ -1135,9 +1073,7 @@ $arrayPortfolio = array(
         'agency' => 'PIP Printing',
         'client' => 'Northrop Grumman',
         'date' => '2013-07-02',
-        'cats' => array(
-            'Print'
-        ),
+        'category' => 'Print',
         'tags' => array(
             'Document Design'
         ),

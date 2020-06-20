@@ -58,13 +58,13 @@ function buildPortfolio( $arrayPortfolio ){
         $agencyDisp = $agency ? '<h6 class="agency"><small>AGENCY:</small> ' . $agency . '</h6>' : NULL;
         $agencyMeta = $agency ? $agency : 'z';
 
-        // cats
-        if( is_array( $cats ) && sizeof( $cats ) > 1 ){
-            sort( $cats, SORT_NATURAL | SORT_FLAG_CASE );
-        }
-        $catsDisp = implode( ', ', $cats );
-        $catsMeta = strtolower( $catsDisp );
-        $catsMeta = str_replace( ',', '', $catsMeta );
+        // category
+        // if( is_array( $category ) && sizeof( $category ) > 1 ){
+        //     sort( $category, SORT_NATURAL | SORT_FLAG_CASE );
+        // }
+        $categoryDisp = $category;
+        $categoryMeta = strtolower( $categoryDisp );
+        $categoryMeta = str_replace( ',', '', $categoryMeta );
 
         // tags
         if( is_array( $tags && sizeof( $tags ) > 1 ) ){
@@ -80,7 +80,7 @@ function buildPortfolio( $arrayPortfolio ){
         $colSizes = $size === 'wide' ? 'col-sm-12 col-md-8 col-lg-6' : 'col-sm-6 col-md-4 col-lg-3';
 
         $output .= <<<OUTPUT
-        <div class="gallery-item $size $catsMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agencyMeta" data-client="$clientMeta">
+        <div class="gallery-item $size $categoryMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agencyMeta" data-client="$clientMeta">
             <a href="javascript:void(0)">
                 <div class="text">
                     <div class="title">
@@ -89,9 +89,9 @@ function buildPortfolio( $arrayPortfolio ){
                         $agencyDisp
                     </div>
                     <div class="meta">
-                        <small class="date">$dateDisp</small>
-                        <small class="cats">$catsDisp</small>
+                        <small class="category">$categoryDisp</small>
                         <small class="tags">$tagsDisp</small>
+                        <small class="date">$dateDisp</small>
                     </div>
                 </div>
                 <img src="/img/portfolio/{$img['thumb']['path']}" />
