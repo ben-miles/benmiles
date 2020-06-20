@@ -748,6 +748,10 @@ footer .social a:hover {
   margin-bottom: 15px;
 }
 
+.gallery-item:hover {
+    z-index: 99;
+}
+
 .gallery-item > a {
     box-shadow: 0 10px 14px rgba(0,0,0,0.75);
     color: #292b2c;
