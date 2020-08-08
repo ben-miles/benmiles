@@ -786,6 +786,7 @@ footer .social a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    overflow: hidden;
 }
 
 @media ( min-width: 576px ) {
