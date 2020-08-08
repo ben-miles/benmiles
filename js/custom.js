@@ -130,20 +130,20 @@ var $gallery = $( '#gallery' ).imagesLoaded( function() {
   // init Isotope after all images have loaded
   $gallery.isotope( {
     itemSelector: '.gallery-item',
-    getSortData: {
+    // getSortData: {
         // agency: '[data-agency]',
         // category: '.category',
         // client: '[data-client]',
-        date: '[data-date]',
+        // date: '[data-date]',
         // title: '.title h3'
-    },
-    sortAscending: {
-        date: false
-    },
+    // },
+    // sortAscending: {
+    //     date: false
+    // },
     masonry: {
         columnWidth: '.gallery-item:not(.col-lg-6)'
     },
-    sortBy: 'date',
+    // sortBy: 'date',
     // filter: '.featured'
     // filter: '*'
   } );
@@ -183,15 +183,16 @@ $( '#shuffle' ).click( function(){
 var $footer = $( "footer" ),
     color = {
         facebook: "#3b5998",
-        twitter: "#1da1f2",
-        instagram: "radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%),"
-                     + "radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)),"
-                     + "linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)",
+        twitter: "linear-gradient(45deg, #1da1f2, #1da1f2 100%)",
+        // instagram: "radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%),"
+        //              + "radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)),"
+        //              + "linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)",
+        instagram: "linear-gradient(45deg, #f7993e, #d52f7e 65%, #784d9e 100%)",
         linkedin: "#283e4a",
         codepen: "#191919",
         github: "#959da5"
