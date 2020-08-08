@@ -51,7 +51,7 @@ function buildPortfolio( $arrayPortfolio ){
         extract( $arrayPortfolioPiece );
 
         // $title = ( !empty( $client ) ) ? $client . ': ' . $title : $title;
-        $urlDisp = ( !empty( $link ) ) ? $link : '';
+        $urlDisp = ( !empty( $link ) ) ? rtrim( str_replace( ['http://','https://'], '', $link ), '/') : '';
         $dateDisp = ( !empty( $date ) ) ? date( 'M. d, Y', strtotime( $date ) ) : '';
         // $excerpt = excerpt( $description, 20 );
         $clientDisp = $client ? '<h6 class="client"><small>CLIENT:</small> ' . $client . '</h6>' : NULL;
