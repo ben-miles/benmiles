@@ -1,0 +1,11 @@
+My portfolio site.
+
+Originally written with PHP, HTML, CSS, plus Bootstrap 4 and some jQuery.
+
+**Features:** 
+- A custom lightbox made from the Bootstrap Modal, 
+- Motion effects using scrollPos(),
+- and some miscellanoues eye-candy experiments.
+
+**Notes:**
+- Watch the .htaccess file -- There are some rules there for forcing all traffic to HTTPS, and it causes problems for localhost. Clear the cache and make sure you're accessing via HTTP when working locally.

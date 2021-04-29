@@ -746,13 +746,14 @@ footer .social a:hover {
 
 .gallery-item {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .gallery-item:hover {
     z-index: 99;
 }
 
-.gallery-item > a {
+.gallery-item-wrap {
     box-shadow: 0 10px 14px rgba(0,0,0,0.75);
     color: #292b2c;
     display: block;
@@ -763,11 +764,11 @@ footer .social a:hover {
 }
 
 @media ( min-width: 576px ) {
-    .gallery-item > a {
+    .gallery-item-wrap {
         max-height: unset;
         overflow: unset;
     }
-    .gallery-item > a:hover {
+    .gallery-item:hover .gallery-item-wrap {
         box-shadow: 0 20px 25px rgba(0,0,0,0.5);
         transform: scale(1.1);
     }
@@ -816,7 +817,7 @@ footer .social a:hover {
     transition: filter .25s ease-in-out;
 }
 
-.gallery-item a:hover .text {
+.gallery-item:hover .text {
         opacity: 1;
 }
 

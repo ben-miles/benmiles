@@ -82,7 +82,7 @@ function buildPortfolio( $arrayPortfolio ){
 
         $output .= <<<OUTPUT
         <div class="gallery-item $size $categoryMeta $tagsMeta $colSizes" data-id="$k" data-date="$date" data-agency="$agencyMeta" data-client="$clientMeta">
-            <a href="javascript:void(0)">
+            <div class="gallery-item-wrap">
                 <div class="text">
                     <div class="title">
                         <h3>$title</h3>
@@ -97,7 +97,7 @@ function buildPortfolio( $arrayPortfolio ){
                     </div>
                 </div>
                 <img src="/img/portfolio/{$img['thumb']['path']}" alt="{$title}"/>
-            </a>
+            </div>
         </div>
 OUTPUT;
 

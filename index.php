@@ -1,17 +1,12 @@
 <?php
 /*
-TODO: Scrollspy for main nav?
-TODO: SEO
+TODO: Get rid of Bootstrap
+TODO: Get rid of jQuery
+TODO: SRCSET for portfolio thumbnails
+TODO: "Featured" category as default for Portfolio, to limit total payload on first load
 TODO: image traversal ( <-- PREV and NEXT --> ) for lightbox
-TODO: multiple image support for lightbox
-    TODO: make gallery thumbnails and modal display images as backgrounds for better centering/scaling. set heights/widths as needed
-    TODO: Add captions to detail images
+TODO: 404 view
 */
-// echo '<pre>';
-// print_r($_SERVER);
-// echo '</pre>';
-
-// die();
 
 // Routing, based on https://www.taniarascia.com/the-simplest-php-router/
 $request = $_SERVER['REQUEST_URI'];
