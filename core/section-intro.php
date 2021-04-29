@@ -14,7 +14,7 @@
                                 <li>DIY Enthusiast.</li>
                             </ul>
                         </div>                    
-                        <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio">
+                        <button class="btn btn-default animated fadeInUp scroll" data-animation="fadeInUp" style="animation-delay: 1.3s;" data-section="portfolio" aria-label="Scroll Down to Portfolio">
                             <i class="fa fa-angle-down bounce" aria-hidden="true"></i>
                         </button>
                     </div>

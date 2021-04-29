@@ -43,7 +43,7 @@
         </footer>
         <!-- footer -->
 
-        <button class="btn btn-default scroll" id="backToTop" data-section="hey">
+        <button class="btn btn-default scroll" id="backToTop" data-section="hey" aria-label="Scroll Back Up to Top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </button>
 
