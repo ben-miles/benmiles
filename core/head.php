@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Design Portfolio of Benjamin Miles.">
+    <meta name="author" content="Benjamin Miles">
     <link rel="icon" href="/img/ben-miles_favicon.png">
 
     <title>Ben Miles</title>
