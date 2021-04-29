@@ -96,7 +96,7 @@ function buildPortfolio( $arrayPortfolio ){
                         <small class="date">$dateDisp</small>
                     </div>
                 </div>
-                <img src="/img/portfolio/{$img['thumb']['path']}" />
+                <img src="/img/portfolio/{$img['thumb']['path']}" alt="{$title}"/>
             </a>
         </div>
 OUTPUT;

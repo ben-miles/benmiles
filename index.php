@@ -18,8 +18,6 @@ $request = $_SERVER['REQUEST_URI'];
 $host = $_SERVER['HTTP_HOST'];
 switch ($request) {
     case '/' :
-        require __DIR__ . '/views/home.php';
-        break;
     case '' :
         require __DIR__ . '/views/home.php';
         break;
