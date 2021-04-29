@@ -18,7 +18,7 @@
                 <?php
                     echo menu_item( "Portfolio", "portfolio" );
                     echo menu_item( "About", "about" );
-                    echo menu_item( "Contact", "footer" );
+                    echo menu_item( "Contact", "contact" );
                 ?>
             </ul>
         </div>
